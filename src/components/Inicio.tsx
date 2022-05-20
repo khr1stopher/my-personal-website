@@ -1,23 +1,23 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import ButtonCustom  from './ButtonCustom'
-import { SectionCustom } from './indexComponents'
+import { SectionInicioCustom, H1PresentCustom, H2Custom, H3Custom, PCustom } from './indexComponents'
 
 const Inicio = () => {
-    return <SectionCustom className='flex flex-col justify-center container px-[150px] py-[100px]'>
+    return <SectionInicioCustom className='flex flex-col justify-center container px-[150px] py-[100px]'>
         <div>
-            <h1 className='text-cyan-300 font-mono mb-5'>Hi, my name is</h1>
+            <H1PresentCustom className='text-cyan-300 font-mono mb-5'>Hi, my name is</H1PresentCustom>
         </div>
         <div>
-            <h2 className='text-slate-300 font-sans text-7xl capitalize font-bold tracking-tight mb-3'>khristopher pineda.</h2>
+            <H2Custom className='text-slate-300 font-sans text-7xl capitalize font-bold tracking-tight mb-3'>khristopher pineda.</H2Custom>
         </div>
         <div>
-            <h3 className='text-slate-400 font-sans text-7xl capitalize font-bold tracking-tight mb-5'>
+            <H3Custom className='text-slate-400 font-sans text-7xl capitalize font-bold tracking-tight mb-5'>
                 I build beautifull web sites.
-            </h3>
+            </H3Custom>
         </div>
         <div>
-            <p className='w-8/12 text-slate-400 font-sans text-lg mb-5'>I`m a Software Developer specializing in building (and occasionally designing) web sites.</p>
+            <PCustom className='w-8/12 text-slate-400 font-sans text-lg mb-5'>I`m a Software Developer specializing in building (and occasionally designing) web sites.</PCustom>
         </div>
         <div>
             <Link
@@ -26,7 +26,7 @@ const Inicio = () => {
                 <ButtonCustom text='Download Resumen' />
             </Link>
         </div>
-    </SectionCustom>
+    </SectionInicioCustom>
 }
 
 export default Inicio;
