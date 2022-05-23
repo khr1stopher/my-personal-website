@@ -20,11 +20,13 @@
     "animejs": "^3.2.1",
     "gatsby": "^4.13.1",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-sass": "^5.14.0",
     "gatsby-plugin-sharp": "^4.13.0",
     "gatsby-transformer-sharp": "^4.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.3.1",
+    "sass": "^1.51.0",
     "scrollreveal": "^4.0.9",
     "styled-components": "^5.3.5"
   },
