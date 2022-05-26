@@ -1,9 +1,9 @@
 import { platform } from "os";
 import React from "react";
 import { CardProjectCustomProps } from '../interfaces/CardProjectCustomProps'
-import ButtonCustom from "./ButtonCustom";
+import ButtonCustom from "./utilities/ButtonCustom";
 import CardProjectCustom from "./cardsprojects";
-import { SectionCustom, TitleCustom } from "./indexComponents";
+import { SectionPage , TitleCustom, WorksContainer } from "./indexComponents";
 import { Link } from "gatsby"
 
 const Works = () => {
@@ -87,24 +87,24 @@ const Works = () => {
         ]
     }]
 
-    return <SectionCustom
+    return <SectionPage
         id="worksSection"
-        className="
-        flex
-        flex-col
-        items-center
-        justify-center
-        px-[150px]
-        py-[100px]">
+        className="pt-32 md:pt-8
+        h-auto
+        justify-center"
+        maxHeight="auto">
         <div className="titulo w-full flex items-center justify-center mb-3">
             <TitleCustom className="font-sans text-slate-300 block text-center font-bold">
                 Other Projects
             </TitleCustom>
         </div>
         <a href="">
-            <p className="sub text-cyan-300 mb-3">Timeline of the projects that I have developed since I am a software developer</p>
+            <p className="sub text-cyan-300 mb-3 text-center">Timeline of the projects that I have developed since I am a software developer</p>
         </a>
-        <div className="w-full content grid grid-cols-3 mb-3">
+        <WorksContainer className="w-full content grid grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-3
+        mb-3">
             {
                 Works.map((work, index) => {
                     return <CardProjectCustom
@@ -115,15 +115,15 @@ const Works = () => {
                         key={index} />
                 })
             }
-        </div>
-        <div className="buton">
+        </WorksContainer>
+        <div className="buton md:mx-auto">
             <Link
             to="/timeline"
             partiallyActive={true}>
                 <ButtonCustom text="view timeline projects" />
             </Link>
         </div>
-    </SectionCustom>
+    </SectionPage>
 }
 
 export default Works;

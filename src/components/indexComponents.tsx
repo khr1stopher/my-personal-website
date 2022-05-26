@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import TitleProps from "../interfaces/TitleProps";
-
+export {default as SectionPage} from './utilities/SectionPage'
+export {default as ButtonCustom} from './utilities/ButtonCustom'
+export { default as Hamburger } from './utilities/Hamburger'
 const hch = "4rem"
 export const fz1 = "2.25rem"
 export const ml1 = "1.6rem"
@@ -28,6 +30,7 @@ export const HeaderCustom = styled.header`
 `
 
 export const NavCustom = styled.header`
+
     @media (max-width: 640px) { 
         height: auto;
     }
@@ -49,6 +52,9 @@ export const Logo = styled.a`
 export const SectionCustom = styled.section`
     min-height: 100vh;
     
+    @media (max-width: 820px) {
+        padding: 2.5rem calc(${ml1} * 2);
+    }
     @media (max-width: 640px) {
         padding: 2.5rem ${ml1};
     }
@@ -73,35 +79,63 @@ export const H1Custom = styled.h1`
 `
 
 export const H1PresentCustom = styled(H1Custom)`
+    @media (max-width: 820px) {
+        font-size: 1.75rem;
+        line-height: 0;
+        letter-spacing: -1px;
+    }
     @media (max-width: 640px) { 
         font-size: 1rem
+    }
+    @media (max-width: 414px) {
+        font-size: 1.5rem;
     }
     @media (max-width: 395px) {
         font-size: 1.5rem;
     }
 `
 export const H2Custom = styled.h2`
+    @media (max-width: 820px) {
+        font-size: 4.8rem;
+        letter-spacing: -3px;
+        display: block;
+    }
     @media (max-width: 640px) { 
         font-size: ${fz1};
         margin-bottom: ${mb1};
+    }
+    @media (max-width: 414px) {
+        font-size: 4rem;
     }
     @media (max-width: 395px) {
         font-size: 3.75rem;
     }
 `
 export const H3Custom = styled.h2`
+    @media (max-width: 820px) {
+        font-size: 4.7rem;
+    }
     @media (max-width: 640px) { 
         font-size: ${fz1};
         margin-bottom: ${mb1};
+    }
+    @media (max-width: 414px) {
+        font-size: 3rem;
     }
     @media (max-width: 395px) {
         font-size: 2.85rem;
     }
 `
 export const PCustom = styled.p`
+    @media (max-width: 820px) {
+    }
     @media (max-width: 640px) { 
         font-size: inherit;
         line-height: inherit;
+    }
+    @media (max-width: 414px) {
+        font-size: 1.35rem;
+        width: 100%;
     }
     @media (max-width: 395px) {
         font-size: 1.30rem;
@@ -117,6 +151,13 @@ export const ButtonStyle = styled.button`
     border-color: var(--c3);
     color: var(--c3);
 
+    @media (max-width: 820px) {
+        background: #000;
+    }
+    @media (max-width: 414px) {
+        font-size: 1.30rem;
+        width: 100%;
+    }
     @media (max-width: 395px) {
         font-size: 1rem;
         width: 100%;
@@ -151,6 +192,8 @@ export const TitleCustom = styled.h2<TitleProps>`
     -ms-user-select: none;
     user-select: none;
     font-size: 26px;
+    text-align: center;
+    
     &:before{
         color: var(--c3);
         font-size:20px;
@@ -200,12 +243,6 @@ export const Social = styled.div`
 `
 
 export const ContainerCards = styled.div`
-    @media (max-width: 640px) { 
-        grid-template-columns: 1fr;
-    }
-    & > .card {
-        flex-direction: column;
-    }
 `
 
 export const CardContainer = styled.div`

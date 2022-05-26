@@ -20,4 +20,6 @@ const Index = () => {
   </>
 }
 
+// pacs is a sistem search please khris!!!
+
 export default Index;

@@ -25,7 +25,7 @@ const CardProjectCustom = (props: CardProjectCustomProps) => {
             <h2 className="title w-full text-xl font-bold text-slate-200">
                 { props.projectName }
             </h2>
-            <p className="w-ful text-md text-slate-500 mb-3">
+            <p className="w-full text-md text-slate-500 mb-3">
                 { props.projectDescription }
             </p>
             <div className="w-full tecnologias flex">

@@ -1,22 +1,20 @@
 import React from "react";
-import { TitleCustom, SectionCustom, LinkCustom } from "./indexComponents";
+import { LineTitle, TitleCustom, LinkCustom, AboutCols } from "./indexComponents";
+import { SectionPage } from './indexComponents'
 
 const About = () => {
-    return <SectionCustom
+    return <SectionPage
         id="aboutSection"
-        className="grid
-        grid-cols-12
-        items-center
-        justify-center
-        px-[150px]
-        py-[100px]">
+        className="pt-32 md:pt-8
+        h-auto
+        lg:grid lg:grid-cols-12">
             <div className="col-start-1 col-end-12 titulo w-full flex items-center mb-3">
                 <TitleCustom className="font-sans text-slate-300 block font-bold">
                     About Me 
                 </TitleCustom>
-                <div style={{height: '1px', border: 'none'}} className="bg-slate-600 ml-5 w-[300px]" ></div>
+                <LineTitle className="bg-slate-600 ml-5 w-[300px]"></LineTitle>
             </div>
-            <div className="col-start-1 col-end-7 content w-full">
+            <AboutCols className="col-start-1 col-end-7 content w-full">
                 <div className="aboutMeText text-slate-400">
                     <p className="mb-2">
                         Hello! My name is Khristopher Pineda, I am passionate about everything that is computer science.    
@@ -31,13 +29,13 @@ const About = () => {
                         My current goal is to create sites focused on the end user, giving them a satisfactory user experience.
                     </p>
                 </div>
-            </div>
-            <div className="col-start-8 col-end-12 content">
+            </AboutCols>
+            <AboutCols className="col-start-8 col-end-12 content">
                 <div className="aboutMeImage bg-cyan-400 rounded-lg">
-                    <img style={{  objectFit: 'cover' }} className="h-[300px] w-full rounded-lg" src="images/mephoto.png" alt="" />
+                    <img style={{  objectFit: 'cover' }} className="select-none h-[300px] w-full rounded-lg" src="images/mephoto.png" alt="" />
                 </div>
-            </div>
-    </SectionCustom>
+            </AboutCols>
+    </SectionPage>
 }
 
 export default About;

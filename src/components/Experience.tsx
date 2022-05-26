@@ -1,21 +1,18 @@
 import React from "react";
-import { SectionCustom, TitleCustom } from "./indexComponents";
-import Card from "./CardCustom";
+import { ContainerCards, LineTitle, SectionPage, TitleCustom } from "./indexComponents";
+import Card from "./utilities/CardCustom";
 
 const Experience = () => {
-    return <SectionCustom 
+    return <SectionPage 
         id="experienceSection"
-        className="grid
-        grid-cols-12
-        items-center
-        justify-center
-        px-[150px]
-        py-[100px]">
+        className="pt-32 md:pt-8
+        h-auto
+        md:grid md:grid-cols-1" maxHeight="auto">
         <div className="col-start-1 col-end-12 titulo w-full flex items-center font-bold mb-5">
             <TitleCustom className="font-sans text-slate-300 block">
                 My Experience
             </TitleCustom>
-            <div style={{ height: '1px', border: 'none' }} className="bg-slate-600 ml-5 w-[200px]" ></div>
+            <LineTitle className="bg-slate-600 ml-5 w-[200px]"></LineTitle>
         </div>
         <div className="descripcion col-start-1 col-end-12 mb-5">
             <p className="mx-5 text-slate-400 mb-3">
@@ -28,23 +25,32 @@ const Experience = () => {
                 02.- those with <span className="bg-teal-800 text-teal-200 text-xs px-2 inline-block rounded-full uppercase font-semibold tracking-wide">by company</span> means that they are companies which I serve as an external developer
             </p>
         </div>
-        <div className="content col-start-1 col-end-13 grid grid-cols-12">
-            <Card description="financial services company" cargo="Desarrollador & Analistas de Software" tipe="by:apinterfaces" technologys={[
+        <ContainerCards className="content
+        md:grid grid-cols-2">
+            {/* <Card description="financial services company" cargo="Desarrollador & Analistas de Software" tipe="by:apinterfaces" technologys={[
                 'vue',
                 'codeigneiter',
                 'javascript',
                 'typescript',
                 'c#',
                 'postgresql'
-            ]} title="afore coppel" img="images/aforecoppel.png"/>
-            <Card description="company of services and consultancy TI" cargo="Desarrollador & Analistas de Software & Multimedia." tipe="contract" title="AP/Interfaces" img="images/api.png"/>
+            ]} title="afore coppel" img="images/aforecoppel.png"/> */}
+            <Card technologys={[
+                'vue',
+                'codeigneiter',
+                'javascript',
+                'typescript',
+                'c#',
+                'postgresql'
+            ]} description="company of services and consultancy TI" cargo="Desarrollador & Analistas de Software" tipe="contract" title="AP/Interfaces" img="images/api.png"/>
             <Card technologys={[
                 'html/css',
                 '.net',
                 'javascript',
                 'selenium',
+                'c#',
                 'sql server'
-            ]} description="Electronic Billing Technology Provider" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="CENET S.A." img="images/cenet.png"/>
+            ]} description="Electronic Billing Technology Provider" cargo="Full Stack Software Developer & Tester." tipe="by:World Cloud Services" title="CENET S.A." img="images/cenet.png"/>
             <Card technologys={[
                 'html/css',
                 'javascript',
@@ -56,21 +62,23 @@ const Experience = () => {
             <Card technologys={[
                 '.net',
                 '.net core',
-                'sql server'
+                'sql server',
+                'dapper',
+                'razor'
             ]} description="company of software development" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="dataifx" img="images/dataifx.png"/>
             <Card technologys={[
                 'angular',
                 'entityframework',
                 '.net core',
                 'sql server'
-            ]}  description="company of concessionaires chevrolet" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="ChevyPlan Colombia" img="images/chevyplan.svg"/>
+            ]}  description="concessionaires chevrolet" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="ChevyPlan Colombia" img="images/chevyplan.svg"/>
             <Card technologys={[
                 'html/css',
                 'bootstrap',
                 'javascript'
             ]} description="company of Software Factory" cargo="Full Stack Software Developer." tipe="contract" title="World Cloud Services" img="images/wcs.png"/>
-        </div>
-    </SectionCustom>
+        </ContainerCards>
+    </SectionPage>
 }
 
 export default Experience;

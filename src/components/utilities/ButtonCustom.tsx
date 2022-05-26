@@ -1,14 +1,17 @@
 import * as React from 'react'
-import ButtonProps from '../interfaces/ButtonProps'
-import { ButtonStyle } from './indexComponents'  
+import ButtonProps from '../../interfaces/ButtonProps'
+import { ButtonStyle } from '../indexComponents'  
 
 const ButtonCustom = (props: ButtonProps) => {
     return <>
-        <ButtonStyle
+        <button
         className={`
+            w-full
             border
             py-2
             px-3
+            text-cyan-300
+            border-cyan-300
             bg-transparent
             text-sm
             font-semibold
@@ -16,9 +19,10 @@ const ButtonCustom = (props: ButtonProps) => {
             transition duration-150 ease-out
             hover:bg-cyan-300/25
             focus:outline-none
-        `}>
+            select-none
+        md:w-auto`}>
             { props.text }.
-        </ButtonStyle>
+        </button>
     </>
 }
 
