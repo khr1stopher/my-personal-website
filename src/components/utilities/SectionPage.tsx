@@ -5,7 +5,8 @@ const prueba = false
 
 const SectionPage = (props: SectionPageProps) => {
     return <section id={props.id} className={`mx-auto max-w-[1536px] ${props.hScreem ?? 'md:h-screen'} flex flex-col box-border p-8
-        min-h-[480px] max-h-[${props.maxHeight ?? '760px'}]
+        min-h-[480px] max-h-[${props.maxHeight ?? "760px"}]
+        sm:h-auto
         md:max-h-['760px']
         ${prueba ? 'sm:bg-black' : ''} sm:p-[4.5rem]
         ${prueba ? 'md:bg-red-900' : ''} md:min-h-[580px] md:p-[7.450rem]

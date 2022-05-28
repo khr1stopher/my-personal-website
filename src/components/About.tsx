@@ -10,7 +10,7 @@ const About = () => {
     return <SectionPage
         id="aboutSection"
         className="
-        lg:grid lg:grid-cols-12" hScreem="xl:h-screen">
+        lg:grid lg:grid-cols-12" hScreem="h-auto">
             <div className="col-start-1 col-end-12 titulo w-full flex items-center mb-3">
                 <TitleCustom className="font-sans text-slate-300 block font-bold">
                     About Me 

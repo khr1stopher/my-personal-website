@@ -91,7 +91,7 @@ const Works = () => {
         id="worksSection"
         className="
         justify-center"
-        hScreem="lg:h-screen">
+        hScreem="h-auto">
         <div className="titulo w-full flex items-center justify-center mb-3">
             <TitleCustom className="font-sans text-slate-300 block text-center font-bold">
                 Other Projects

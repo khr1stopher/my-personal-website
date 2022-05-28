@@ -6,4 +6,5 @@ export default interface SectionPageProps {
     className?: string;
     maxHeight?: string;
     hScreem?: string;
+    styles?: React.CSSProperties;
 }
