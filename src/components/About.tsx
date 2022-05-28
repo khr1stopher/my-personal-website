@@ -1,13 +1,16 @@
 import React from "react";
 import { LineTitle, TitleCustom, LinkCustom, AboutCols } from "./indexComponents";
 import { SectionPage } from './indexComponents'
+import companys from "../images/companys";
 
 const About = () => {
+
+    const { base64 } = companys.find((Element) => Element.name === "mePhoto") ?? { base64: '' };
+
     return <SectionPage
         id="aboutSection"
-        className="pt-32 md:pt-8
-        h-auto
-        lg:grid lg:grid-cols-12">
+        className="
+        lg:grid lg:grid-cols-12" hScreem="xl:h-screen">
             <div className="col-start-1 col-end-12 titulo w-full flex items-center mb-3">
                 <TitleCustom className="font-sans text-slate-300 block font-bold">
                     About Me 
@@ -32,7 +35,7 @@ const About = () => {
             </AboutCols>
             <AboutCols className="col-start-8 col-end-12 content">
                 <div className="aboutMeImage bg-cyan-400 rounded-lg">
-                    <img style={{  objectFit: 'cover' }} className="select-none h-[300px] w-full rounded-lg" src="images/mephoto.png" alt="" />
+                    <img style={{  objectFit: 'cover' }} className="select-none h-[300px] w-full rounded-lg" src={base64} alt="" />
                 </div>
             </AboutCols>
     </SectionPage>

@@ -1,12 +1,15 @@
 import React from "react";
 import CardProps from "../../interfaces/CardProps";
 import {CardContainer} from '../indexComponents'
-
+import companys from "../../images/companys";
 const Card = (props: CardProps) => {
+
+    const { base64 } = companys.find((Element) => Element.name === props.img) ?? { base64: '' };
+
     return <>
         <div className="card mb-4 col-span-6 md:col-span-1">
             <CardContainer className="flex lg:flex-row flex-col items-center justify-center">
-                <img src={props.img} alt=""
+                <img src={base64} alt=""
                     className="
                 rounded-lg
                 lg:w-[170px]

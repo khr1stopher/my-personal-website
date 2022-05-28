@@ -5,4 +5,5 @@ export default interface SectionPageProps {
     children: React.ReactNode;
     className?: string;
     maxHeight?: string;
+    hScreem?: string;
 }

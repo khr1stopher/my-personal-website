@@ -5,9 +5,8 @@ import Card from "./utilities/CardCustom";
 const Experience = () => {
     return <SectionPage 
         id="experienceSection"
-        className="pt-32 md:pt-8
-        h-auto
-        md:grid md:grid-cols-1" maxHeight="auto">
+        className="
+        md:grid md:grid-cols-1 h-auto" maxHeight="auto" hScreem="h-auto">
         <div className="col-start-1 col-end-12 titulo w-full flex items-center font-bold mb-5">
             <TitleCustom className="font-sans text-slate-300 block">
                 My Experience
@@ -34,7 +33,7 @@ const Experience = () => {
                 'typescript',
                 'c#',
                 'postgresql'
-            ]} title="afore coppel" img="images/aforecoppel.png"/> */}
+            ]} title="afore coppel" img="coppel"/> */}
             <Card technologys={[
                 'vue',
                 'codeigneiter',
@@ -42,7 +41,7 @@ const Experience = () => {
                 'typescript',
                 'c#',
                 'postgresql'
-            ]} description="company of services and consultancy TI" cargo="Desarrollador & Analistas de Software" tipe="contract" title="AP/Interfaces" img="images/api.png"/>
+            ]} description="company of services and consultancy TI" cargo="Desarrollador & Analistas de Software" tipe="contract" title="AP/Interfaces" img="api"/>
             <Card technologys={[
                 'html/css',
                 '.net',
@@ -50,33 +49,33 @@ const Experience = () => {
                 'selenium',
                 'c#',
                 'sql server'
-            ]} description="Electronic Billing Technology Provider" cargo="Full Stack Software Developer & Tester." tipe="by:World Cloud Services" title="CENET S.A." img="images/cenet.png"/>
+            ]} description="Electronic Billing Technology Provider" cargo="Full Stack Software Developer & Tester." tipe="by:World Cloud Services" title="CENET S.A." img="cenet"/>
             <Card technologys={[
                 'html/css',
                 'javascript',
                 'php'
-            ]} description="company of digital payments" cargo="Full Stack Software Developer." tipe="by:buentipo anchor" title="Visa" img="images/visa.png"/>
+            ]} description="company of digital payments" cargo="Full Stack Software Developer." tipe="by:buentipo anchor" title="Visa" img="visa"/>
             <Card technologys={[
                 'bootstrap'
-            ]} description="advertising services company" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="BUENTIPO ANCHOR." img="images/buentipo.png" />
+            ]} description="advertising services company" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="BUENTIPO ANCHOR." img="buentipo" />
             <Card technologys={[
                 '.net',
                 '.net core',
                 'sql server',
                 'dapper',
                 'razor'
-            ]} description="company of software development" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="dataifx" img="images/dataifx.png"/>
+            ]} description="company of software development" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="dataifx" img="dataifx"/>
             <Card technologys={[
                 'angular',
                 'entityframework',
                 '.net core',
                 'sql server'
-            ]}  description="concessionaires chevrolet" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="ChevyPlan Colombia" img="images/chevyplan.svg"/>
+            ]}  description="concessionaires chevrolet" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="ChevyPlan Colombia" img="chevyplan"/>
             <Card technologys={[
                 'html/css',
                 'bootstrap',
                 'javascript'
-            ]} description="company of Software Factory" cargo="Full Stack Software Developer." tipe="contract" title="World Cloud Services" img="images/wcs.png"/>
+            ]} description="company of Software Factory" cargo="Full Stack Software Developer." tipe="contract" title="World Cloud Services" img="wcs"/>
         </ContainerCards>
     </SectionPage>
 }

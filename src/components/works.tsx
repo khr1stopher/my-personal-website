@@ -89,10 +89,9 @@ const Works = () => {
 
     return <SectionPage
         id="worksSection"
-        className="pt-32 md:pt-8
-        h-auto
+        className="
         justify-center"
-        maxHeight="auto">
+        hScreem="lg:h-screen">
         <div className="titulo w-full flex items-center justify-center mb-3">
             <TitleCustom className="font-sans text-slate-300 block text-center font-bold">
                 Other Projects
