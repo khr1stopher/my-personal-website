@@ -6,7 +6,7 @@ const Experience = () => {
     return <SectionPage 
         id="experienceSection"
         className="
-        md:grid md:grid-cols-1 h-auto" maxHeight="auto" hScreem="lg:h-screen">
+        md:grid md:grid-cols-1 h-auto" maxHeight="auto" hScreem="h-auto">
         <div className="col-start-1 col-end-12 titulo w-full flex items-center font-bold mb-5">
             <TitleCustom className="font-sans text-slate-300 block">
                 My Experience
