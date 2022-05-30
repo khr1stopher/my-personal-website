@@ -8,10 +8,77 @@ export const fz1 = "2.25rem"
 export const ml1 = "1.6rem"
 export const mb1 = '.5rem'
 
+export const Content = styled.div`
+`
+
 export const Contenido = styled.div`
     @media (max-width: 640px) {
         width: 100%;
         text-aling: center;
+    }
+`
+
+export const LoadingPageCustom = styled.div`
+    .loading-page-content{
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: 56;
+        background: var(--c2);
+        animation: fadeIn .5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .contenedor{
+        display: flex;
+        width: 240px;
+        height: 20px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 19.9px;
+        
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    
+        
+        margin: auto;
+        overflow: hidden;
+        ul{
+            margin-top: -160px;
+                list-style: none;
+                padding-left: 2px;
+                animation: cambiar 3s ease-in-out;
+            }
+          
+          li{
+            text-transform: uppercase;
+            text-align:center;
+            font-weight: bold;
+          }
+          
+          @keyframes cambiar {
+            0% {margin-top:0;}
+            15% {margin-top:-20px;}
+            30% {margin-top:-40px;}
+            45%{margin-top: -80px}
+            60%{margin-top: -100px}
+            70%{margin-top: -120px}
+            85%{margin-top: -140px}
+            100%{margin-top: -160px}
+          }
     }
 `
 
@@ -51,6 +118,7 @@ export const Logo = styled.a`
 
 export const SectionCustom = styled.section`
     min-height: 100vh;
+
     
     @media (max-width: 820px) {
         padding: 2.5rem calc(${ml1} * 2);
@@ -58,6 +126,8 @@ export const SectionCustom = styled.section`
     @media (max-width: 640px) {
         padding: 2.5rem ${ml1};
     }
+
+    
     `
 
 export const ContactSectionCustom = styled(SectionCustom)`
