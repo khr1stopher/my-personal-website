@@ -73,7 +73,11 @@ const NavBar = () => {
                         </div>
                         <div className="resumen flex hidden md:flex items-center space-x-1">
                             <div className="button">
-                                <ButtonCustom text="Resumen" />
+                                <a
+                                    href="/resume+khristopher.pdf"
+                                    >
+                                    <ButtonCustom text='Resumen' />
+                                </a>
                             </div>
                         </div>
                     </div>

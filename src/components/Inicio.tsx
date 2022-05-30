@@ -32,11 +32,11 @@ const Inicio = () => {
             </p>
         </div>
         <div>
-            <Link
-                to="/resume+khristopher2022.pdf"
+            <a
+                href="/resume+khristopher.pdf"
                 >
                 <ButtonCustom text='Download Resumen' />
-            </Link>
+            </a>
         </div>
     </SectionPage>
 }

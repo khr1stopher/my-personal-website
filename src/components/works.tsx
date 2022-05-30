@@ -97,7 +97,7 @@ const Works = () => {
                 Other Projects
             </TitleCustom>
         </div>
-        <a href="">
+        <a href="/timeline">
             <p className="sub text-cyan-300 mb-3 text-center">Timeline of the projects that I have developed since I am a software developer</p>
         </a>
         <WorksContainer className="w-full content grid grid-cols-1
@@ -116,11 +116,10 @@ const Works = () => {
             }
         </WorksContainer>
         <div className="buton md:mx-auto">
-            <Link
-            to="/timeline"
-            partiallyActive={true}>
+            <a
+                href="/timeline">
                 <ButtonCustom text="view timeline projects" />
-            </Link>
+            </a>
         </div>
     </SectionPage>
 }
