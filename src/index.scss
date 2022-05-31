@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --c1: #020209;
+    --c2: #0a192f;
+    --c3: #00f7ff;
+    --c4: #062366;
+    --c5: #112240;
+}
+
+body {
+    background-color: var(--c2);
+    min-height: 100vh;
+    counter-reset: section;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.loading-page-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 56;
+    background: var(--c2);
+    animation: fadeIn .5s ease-in-out;
+
+    .contenedor {
+        display: flex;
+        width: 240px;
+        height: 20px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 19.9px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+
+        margin: auto;
+        overflow: hidden;
+
+        ul {
+            margin-top: -160px;
+            list-style: none;
+            padding-left: 2px;
+            animation: cambiar 3s ease-in-out;
+        }
+
+        li {
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @keyframes cambiar {
+            0% {
+                margin-top: 0;
+            }
+
+            15% {
+                margin-top: -20px;
+            }
+
+            30% {
+                margin-top: -40px;
+            }
+
+            45% {
+                margin-top: -80px
+            }
+
+            60% {
+                margin-top: -100px
+            }
+
+            70% {
+                margin-top: -120px
+            }
+
+            85% {
+                margin-top: -140px
+            }
+
+            100% {
+                margin-top: -160px
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--c2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--c3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--c4)
+}

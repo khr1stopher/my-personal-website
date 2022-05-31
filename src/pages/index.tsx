@@ -5,7 +5,7 @@ import About from '../components/About'
 import Experience from '../components/Experience'
 import Works from '../components/works'
 import Contact from '../components/Contact'
-import '../index.css'
+import '../index.scss'
 import LoadingPage from '../components/loadingPage'
 import { Content } from '../components/indexComponents'
 
