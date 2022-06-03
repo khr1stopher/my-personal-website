@@ -1,7 +1,7 @@
 import React from "react";
 import { Contenido, SocialContainerCustom, SectionPage, Social, TitleCustom } from "./indexComponents";
 import { FaNpm } from 'react-icons/fa'
-import { FiCodepen, FiGithub, FiGitlab, FiInstagram } from "react-icons/fi";
+import { FiLinkedin, FiCodepen, FiGithub, FiGitlab, FiInstagram } from "react-icons/fi";
 import ButtonCustom from "./utilities/ButtonCustom";
 
 const Contact = () => {
@@ -23,7 +23,7 @@ const Contact = () => {
         <SocialContainerCustom className="p-5 w-auto
             hidden
             SocialLink contactfixed shadow-xl
-            md:flex md:backdrop-blur-sm md:w-[32rem] md:fixed md:bottom-4
+            md:flex md:backdrop-blur-sm md:w-[35rem] md:fixed md:bottom-4
             items-center grid grid-cols-5 mx-auto">
             <a href="https://codepen.io/khristopher-pineda" target="_blank">
                 <Social>
@@ -43,6 +43,11 @@ const Contact = () => {
             <a href="https://www.instagram.com/khristophito/" target="_blank">
                 <Social>
                     <FiInstagram color="white" />
+                </Social>
+            </a>
+            <a href="#">
+                <Social>
+                    <FiLinkedin color="white" />
                 </Social>
             </a>
             <a href="https://www.npmjs.com/~khr1stopher" target="_blank">
