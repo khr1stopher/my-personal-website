@@ -3,7 +3,7 @@ import React from 'react'
 import { SectionPage, ButtonCustom } from './indexComponents'
 
 const Inicio = () => {
-    return <SectionPage className='justify-center' hScreem='h-screen'>
+    return <SectionPage className='justify-center md:min-h-auto md:h-screen' hScreem='h-screen' maxHeight='auto'>
         <div>
             <h1 className='
             text-cyan-300 font-mono text-base mb-3
