@@ -16,7 +16,6 @@ body {
     counter-reset: section;
 }
 
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -51,7 +50,6 @@ body {
         bottom: 0;
         left: 0;
 
-
         margin: auto;
         overflow: hidden;
 
@@ -59,9 +57,8 @@ body {
             margin-top: -160px;
             list-style: none;
             padding-left: 2px;
-            animation: cambiar 3s ease-in-out;
+            animation: cambiar 2s ease-in-out;
         }
-
         li {
             text-transform: uppercase;
             text-align: center;

@@ -9,7 +9,7 @@ const LoadingPage = (props: LoadingCustomProps) => {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 4000);
+        }, 2750);
     }, [])
 
     return <LoadingPageCustom>

@@ -60,7 +60,7 @@ export const LoadingPageCustom = styled.div`
             margin-top: -160px;
                 list-style: none;
                 padding-left: 2px;
-                animation: cambiar 3s ease-in-out;
+                animation: cambiar 2s ease-in-out;
             }
           
           li{
@@ -83,7 +83,7 @@ export const LoadingPageCustom = styled.div`
 `
 
 export const SocialContainerCustom = styled.div`
-left: calc(50% - (32rem / 2));
+left: calc(50% - (35rem / 2));
 
 @media (max-width: 640px) {
     position: relative;
