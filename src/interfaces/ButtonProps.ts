@@ -1,3 +1,5 @@
-export default interface ButtonProps{
-    text?: string
+import React from 'react';
+
+export default interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
+    text?: string,
 }

@@ -1,10 +1,19 @@
 import React from "react";
-import { Contenido, SocialContainerCustom, SectionPage, Social, TitleCustom } from "./indexComponents";
+import { Contenido, SocialContainerCustom, SectionPage, Social, TitleCustom, ModalContact } from "./indexComponents";
 import { FaNpm } from 'react-icons/fa'
 import { FiLinkedin, FiCodepen, FiGithub, FiGitlab, FiInstagram } from "react-icons/fi";
 import ButtonCustom from "./utilities/ButtonCustom";
 
 const Contact = () => {
+
+    const [modalContact, setModalContact] = React.useState(false);
+
+    const Close = (e: any) => {
+        setModalContact(false);
+    }
+
+    const toggle = () => {setModalContact(!modalContact)}
+
     return <SectionPage
         id="contactSection"
         className="justify-center align-center mg:max-h-[600px] 2xl:max-h-[740px]" hScreem='h-screen'>
@@ -18,7 +27,8 @@ const Contact = () => {
             If you are a recruiter, you have any questions about my work or you need any help that you think I can offer you. do not hesitate to contact me it will be a pleasure to answer you
         </Contenido>
         <div className="md:mx-auto buttom">
-            <ButtonCustom text="Contact me" />
+            <ButtonCustom text="Contact me" onClick={toggle} />
+            <ModalContact active={modalContact} Close={Close} />
         </div>
         <SocialContainerCustom className="p-5 w-auto
             hidden

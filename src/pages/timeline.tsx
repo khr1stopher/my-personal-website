@@ -28,7 +28,7 @@ const Timeline = () => {
     }                
 
     return <LoadingPage>
-        <div className="container min-h-screen flex flex-col justify-center items-center px-8 py-4">
+        <div className="container min-h-screen flex flex-col justify-center items-center md:px-8 px-2 py-4">
             <div className="return w-full pl-5 pt-5 text-slate-200">
                 <Link to='/'>
                     <BsArrowReturnLeft className="return-icon text-slate-200 hover:text-cyan-300" style={{ height: "1.5rem", width: "1.5rem" }} />

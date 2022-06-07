@@ -9,7 +9,7 @@ const Card = (props: CardProps) => {
     return <>
         <div className="card mb-4 col-span-6 md:col-span-1">
             <CardContainer className="flex lg:flex-row flex-col items-center justify-center">
-                <img src={base64} alt=""
+                <img src={base64 == '' ? props.img : base64} alt=""
                     className="
                 rounded-lg
                 lg:w-[170px]

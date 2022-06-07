@@ -41,7 +41,7 @@ const Experience = () => {
                 'typescript',
                 'c#',
                 'postgresql'
-            ]} description="company of services and consultancy TI" cargo="Desarrollador & Analistas de Software" tipe="contract" title="AP/Interfaces" img="api"/>
+            ]} description="company of services and consultancy TI" cargo="Desarrollador & Analistas de Software" tipe="contract" title="AP/Interfaces" img="/api.png"/>
             <Card technologys={[
                 'html/css',
                 '.net',
@@ -57,7 +57,7 @@ const Experience = () => {
             ]} description="company of digital payments" cargo="Full Stack Software Developer." tipe="by:buentipo anchor" title="Visa" img="visa"/>
             <Card technologys={[
                 'bootstrap'
-            ]} description="advertising services company" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="BUENTIPO ANCHOR." img="buentipo" />
+            ]} description="advertising services company" cargo="Full Stack Software Developer." tipe="by:World Cloud Services" title="BUENTIPO ANCHOR." img="/buentipo.png" />
             <Card technologys={[
                 '.net',
                 '.net core',

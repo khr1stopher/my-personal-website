@@ -3,6 +3,7 @@ import TitleProps from "../interfaces/TitleProps";
 export {default as SectionPage} from './utilities/SectionPage'
 export {default as ButtonCustom} from './utilities/ButtonCustom'
 export { default as Hamburger } from './utilities/Hamburger'
+export { default as ModalContact } from './modalContact'
 const hch = "4rem"
 export const fz1 = "2.25rem"
 export const ml1 = "1.6rem"

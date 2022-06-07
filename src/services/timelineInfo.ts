@@ -74,7 +74,7 @@ const workspace = [
         projectName: "landing page WCS",
         madewith: ["html", "css", "javascript", "php", "jquery"],
         madeat: "WCS",
-        link: ["https://wcslat.com/"]
+        link: ["http://www.wcloudservices.com/index.html"]
     },
     {
         date: 2020,
