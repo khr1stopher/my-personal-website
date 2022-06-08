@@ -35,7 +35,7 @@ const About = () => {
             </AboutCols>
             <AboutCols className="col-start-8 col-end-12 content">
                 <div className="aboutMeImage bg-cyan-400 rounded-lg">
-                    <img style={{  objectFit: 'cover' }} className="select-none h-[300px] w-full rounded-lg" src={base64} alt="" />
+                    <img style={{  objectFit: 'cover' }} className="select-none h-[300px] w-full rounded-lg" src="/me.png" alt="" />
                 </div>
             </AboutCols>
     </SectionPage>
