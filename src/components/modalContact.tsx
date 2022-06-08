@@ -8,7 +8,8 @@ interface infoContact{
     icon?: JSX.Element,
     name?: string,
     link?: string,
-    color?: string
+    color?: string,
+    bg?: string,
 }
 
 const ModalContact = (props: ModalProps) => {
@@ -17,27 +18,37 @@ const ModalContact = (props: ModalProps) => {
         {
             icon: <FaCodepen />,
             name: 'Codepen',
-            color: '#bada55',
+            bg: "#000000",
+            color: '#ffffff',
         },
         {
             icon: <FiGithub />,
             name: 'Github',
+            bg: "#151515",
+            color: '#ffffff',
         },
         {
             icon: <FiGitlab/>,
             name: 'Gitlab',
+            bg: "#FC6D26",
+            color: '#ffffff',
         },
         {
             icon: <FiInstagram/>,
             name: 'Instagram',
+            bg: "#ffffff",
         },
         {
             icon: <FiLinkedin/>,
             name: 'Linkedin',
+            bg: "#062366",
+            color: '#ffffff',
         },
         {
             icon: <FiMail/>,
             name: 'Email',
+            bg: "#8f0000",
+            color: '#ffffff',
         }
     ];
 
@@ -51,9 +62,12 @@ const ModalContact = (props: ModalProps) => {
         </div>
         <div className="content grid grid-cols-1">
             {
-                infoContacts.map((infoContact) => {
-                    return <a className="button w-full" href={infoContact?.link}>
-                        <button className={`bg-[${infoContact?.color}]` + " p-3 w-full flex items-center"}>
+                infoContacts.map((infoContact, index) => {
+                    let styleInfo = {background: infoContact.bg, color: infoContact.color }
+                    return <a className="button w-full mb-3" href={infoContact?.link} key={index}>
+                        <button
+                        style={styleInfo}
+                        className={" p-3 w-full flex items-center"}>
                             <span className="mr-2">{ infoContact.icon }</span><span>{ infoContact.name }</span>
                         </button>
                     </a>

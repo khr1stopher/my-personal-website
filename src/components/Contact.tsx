@@ -10,9 +10,13 @@ const Contact = () => {
 
     const Close = (e: any) => {
         setModalContact(false);
+        document.body.style.overflow = modalContact ? 'auto' : 'hidden';
     }
 
-    const toggle = () => {setModalContact(!modalContact)}
+    const toggle = () => {
+        setModalContact(!modalContact)
+        document.body.style.overflow = modalContact ? 'auto' : 'hidden';
+    }
 
     return <SectionPage
         id="contactSection"
@@ -24,12 +28,17 @@ const Contact = () => {
         </div>
         <h2 className="text-slate-200 text-2xl text-center mb-3 font-extrabold">You have something to ask me?</h2>
         <Contenido className="mx-auto lg:w-8/12 font-mono contenido text-center text-slate-400 mb-5">
-            If you are a recruiter, you have any questions about my work or you need any help that you think I can offer you. do not hesitate to contact me it will be a pleasure to answer you
+            If you are a recruiter, you have any questions about my work or you need any help that you think I can offer you. do not hesitate to contact me by email 
+            <a href="mailto:kkromans009@gmail.com"> kkromans009@gmail.com</a>
+            ,<a href="https://github.com/khr1stopher" target="_blank"> github</a>
+            ,<a href="https://gitlab.com/khristopher_pineda" target="_blank"> Gitlab</a>
+            ,<a href="https://www.linkedin.com/in/khristopher-pineda/"> linkedin </a>
+                it will be a pleasure to answer you
         </Contenido>
-        <div className="md:mx-auto buttom">
+        {/* <div className="md:mx-auto buttom">
             <ButtonCustom text="Contact me" onClick={toggle} />
             <ModalContact active={modalContact} Close={Close} />
-        </div>
+        </div> */}
         <SocialContainerCustom className="p-5 w-auto
             hidden
             SocialLink contactfixed shadow-xl

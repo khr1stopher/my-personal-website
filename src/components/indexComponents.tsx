@@ -13,6 +13,11 @@ export const Content = styled.div`
 `
 
 export const Contenido = styled.div`
+
+    a{
+        color: var(--c3);
+    }
+
     @media (max-width: 640px) {
         width: 100%;
         text-aling: center;
