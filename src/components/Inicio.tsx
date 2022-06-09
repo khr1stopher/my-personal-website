@@ -33,7 +33,7 @@ const Inicio = () => {
         </div>
         <div>
             <a
-                href="/resume+khristopher.epub"
+                href="/resumen"
                 target={'_blank'}
                 >
                 <ButtonCustom text='Download Resumen' />
