@@ -1,11 +1,8 @@
 import React from "react";
 import { LineTitle, TitleCustom, LinkCustom, AboutCols } from "./indexComponents";
 import { SectionPage } from './indexComponents'
-import companys from "../images/companys";
 
 const About = () => {
-
-    const { base64 } = companys.find((Element) => Element.name === "mePhoto") ?? { base64: '' };
 
     return <SectionPage
         id="aboutSection"
