@@ -26,14 +26,14 @@ const Experience = () => {
         </div>
         <ContainerCards className="content
         md:grid grid-cols-2">
-            {/* <Card description="financial services company" cargo="Desarrollador & Analistas de Software" tipe="by:apinterfaces" technologys={[
+            <Card description="financial services company" cargo="Desarrollador & Analistas de Software" tipe="by:apinterfaces" technologys={[
                 'vue',
                 'codeigneiter',
                 'javascript',
                 'typescript',
                 'c#',
                 'postgresql'
-            ]} title="afore coppel" img="coppel"/> */}
+            ]} title="afore coppel" img="/afore.png"/>
             <Card technologys={[
                 'vue',
                 'codeigneiter',
