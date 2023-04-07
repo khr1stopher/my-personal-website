@@ -75,6 +75,7 @@ const NavBar = () => {
                             <div className="button">
                                 <a
                                     href="/resume+khristopher.pdf"
+                                    target={'_blank'}
                                     >
                                     <ButtonCustom text='Resumen' />
                                 </a>
