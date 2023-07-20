@@ -1,7 +1,7 @@
 import * as React from 'react'
 import NavBar from '../components/NavBar'
 import Inicio from '../components/Inicio'
-import About from '../components/About'
+// import About from '../components/About'
 import Experience from '../components/Experience'
 import Works from '../components/works'
 import Contact from '../components/Contact'
@@ -15,10 +15,9 @@ const Index = () => {
       <Content>
         <NavBar />
         <Inicio />
-        <About />
+        {/* <About /> */}
         <Experience />
         <Works />
-        <Contact />
       </Content>
     </LoadingPage>
   </>
