@@ -15,7 +15,7 @@ export default function HTML(props) {
         <title>Khristopher Pineda</title>
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}>
+      <body {...props.bodyAttributes} className="bg-top bg-no-repeat bg-lights-sun">
         {props.preBodyComponents}
         <div
           key={`body`}
