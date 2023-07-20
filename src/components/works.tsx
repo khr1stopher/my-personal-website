@@ -90,16 +90,8 @@ const Works = () => {
     return <SectionPage
         id="worksSection"
         className="
-        justify-center"
+        justify-center mt-5"
         hScreem="h-auto">
-        <div className="titulo w-full flex items-center justify-center mb-3">
-            <TitleCustom className="font-sans text-slate-300 block text-center font-bold">
-                Other Projects
-            </TitleCustom>
-        </div>
-        <a href="/timeline">
-            <p className="sub text-cyan-300 mb-3 text-center">Timeline of the projects that I have developed since I am a software developer</p>
-        </a>
         <WorksContainer className="w-full content grid grid-cols-1
         sm:grid-cols-2
         lg:grid-cols-3

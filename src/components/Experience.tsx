@@ -6,7 +6,7 @@ const Experience = () => {
     return <SectionPage 
         id="experienceSection"
         className="
-        md:grid md:grid-cols-1 h-auto" maxHeight="auto" hScreem="h-auto">
+        md:grid md:grid-cols-1 h-auto" maxHeight="auto" hScreem="h-auto" styles={{padding:"0px !important"}}>
         <ContainerCards className="content
         md:grid grid-cols-2">
             <Card description="financial services company" cargo="Desarrollador & Analistas de Software" tipe="by:apinterfaces" technologys={[

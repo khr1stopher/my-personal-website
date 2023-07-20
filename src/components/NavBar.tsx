@@ -9,10 +9,8 @@ const NavBar = () => {
     const [hamburgerActive, sethamburgerActive] = useState(false)
 
     const listPage = [
-        { name: 'About', elementId: 'aboutSection' },
         { name: 'Experience', elementId: 'experienceSection' },
-        { name: 'Works', elementId: 'worksSection' },
-        { name: 'Contact', elementId: 'contactSection' },
+        { name: 'Works', elementId: 'worksSection' }
     ]
 
     const scrollSection = (id: string) => {

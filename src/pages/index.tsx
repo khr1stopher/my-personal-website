@@ -8,6 +8,8 @@ import Contact from '../components/Contact'
 import '../index.scss'
 import LoadingPage from '../components/loadingPage'
 import { Content } from '../components/indexComponents'
+import Separator from '../components/utilities/Separator'
+import Footer from '../components/Footer'
 
 const Index = () => {
   return <>
@@ -15,9 +17,12 @@ const Index = () => {
       <Content>
         <NavBar />
         <Inicio />
+        <Separator title='Experience' description="Here are some companies I've worked"/>
         {/* <About /> */}
         <Experience />
+        <Separator title='My Work' description="Timeline of the projects that I have developed"/>
         <Works />
+        <Footer />
       </Content>
     </LoadingPage>
   </>
