@@ -10,6 +10,7 @@ import LoadingPage from '../components/loadingPage'
 import { Content } from '../components/indexComponents'
 import Separator from '../components/utilities/Separator'
 import Footer from '../components/Footer'
+import TimeLine from '../components/TimeLine'
 
 const Index = () => {
   return <>
@@ -19,7 +20,8 @@ const Index = () => {
         <Inicio />
         <Separator title='Experience' description="Here are some companies I've worked"/>
         {/* <About /> */}
-        <Experience />
+        <TimeLine/>
+        {/* <Experience /> */}
         <Separator title='My Work' description="Timeline of the projects that I have developed"/>
         <Works />
         <Footer />

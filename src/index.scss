@@ -34,7 +34,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--c2);
-    min-height: 100vh;
     counter-reset: section;
 }
 
@@ -49,6 +48,24 @@ body::after {
     background-size: cover;
     z-index: -1;    
     opacity: 0.3; /* Opacidad de la imagen de fondo */
+    animation-name: parapadeo;
+    animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes parapadeo {
+    0% {
+        opacity: 0.3; /* Opacidad de la imagen de fondo */
+    }
+
+    
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 0.3; /* Opacidad de la imagen de fondo */
+    }
   }
 
 @keyframes fadeIn {
