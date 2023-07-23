@@ -3,6 +3,7 @@ import React from 'react'
 import { SectionPage, ButtonCustom, SocialContainerCustom, Social } from './indexComponents'
 import { FaNpm } from 'react-icons/fa'
 import { FiCodepen, FiGithub, FiGitlab, FiInstagram, FiLinkedin } from 'react-icons/fi'
+import Technologies from './Technologies'
 
 const Inicio = () => {
     return <SectionPage className='mt-0 pt-32'>
@@ -27,12 +28,13 @@ const Inicio = () => {
             </h3>
         </div>
         <div>
-            <p className='w-full text-slate-400 font-sans text-base mb-5 leading-0
+            <p className='w-full text-slate-400 font-sans text-base leading-0
             md:text-lg md:w-8/12
             lg:w-6/12'>
                 I'm a dedicated software developer who specializes in creating and designing high-quality websites.
             </p>
         </div>
+        <Technologies/>
         <div className='flex items-center flex-wrap'>
             <a
                 href="/resume+khristopher.pdf"
