@@ -9,10 +9,8 @@ const NavBar = () => {
     const [hamburgerActive, sethamburgerActive] = useState(false)
 
     const listPage = [
-        { name: 'About', elementId: 'aboutSection' },
         { name: 'Experience', elementId: 'experienceSection' },
-        { name: 'Works', elementId: 'worksSection' },
-        { name: 'Contact', elementId: 'contactSection' },
+        { name: 'Works', elementId: 'worksSection' }
     ]
 
     const scrollSection = (id: string) => {
@@ -46,15 +44,13 @@ const NavBar = () => {
     })
 
     return <HeaderCustom style={{ transition: '.6s', zIndex: 50 }} className={`${shadowHeader ? 'shadow-black-500/40 shadow-xl' : ''} top-0 backdrop-blur-sm fixed w-full text-[F0F2EF]`}>
-        <NavCustom className={`flex flex-col items-center ${shadowHeader ? '' : 'h-[100px]'}`}>
+        <NavCustom className={`flex flex-col items-center`}>
             <Kcontainer className="container flex justify-between items-center max-w-6xl mx-auto px-8">
                 <div className="flex w-full justify-between">
                     <div className="flex">
                         <div className="mr-4">
-                            <Logo href="/" className="flex items-center py-5 px-0 text-gray-700">
-                                <span style={{ color: 'var(--c3)', visibility: 'visible', opacity: 1, transform: 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)', transition: 'opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.25s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 0.25s' }} className="text-{16px} font-mono logo">
-                                    <span className='text-slate-400'>{'<'}</span>khristopher<span className='text-slate-400'>{'/>'}</span>
-                                </span>
+                            <Logo href="/" className="flex items-center py-5 text-slate-300 font-sans capitalize font-bold tracking-tighter text-base">
+                                Khristopher Pineda
                             </Logo>
                         </div>
                     </div>
@@ -74,7 +70,8 @@ const NavBar = () => {
                         <div className="resumen flex hidden md:flex items-center space-x-1">
                             <div className="button">
                                 <a
-                                    href="/resumen"
+                                    href="/resume+khristopher.pdf"
+                                    target={'_blank'}
                                     >
                                     <ButtonCustom text='Resumen' />
                                 </a>
@@ -94,7 +91,7 @@ const NavBar = () => {
                                     }}
                                     key={i}
                                     className='hover:bg-white/10 active:bg-white/10 focus:bg-white/10 select-none m-3 cursor-pointer text-2xl font-bold font-sans list-none p-3 text-center text-slate-300'>
-                                        {Object.name}.
+                                        {Object.name}
                                     </li>
                                 })}
                             </div>

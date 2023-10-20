@@ -1,13 +1,16 @@
 import * as React from 'react'
 import NavBar from '../components/NavBar'
 import Inicio from '../components/Inicio'
-import About from '../components/About'
+// import About from '../components/About'
 import Experience from '../components/Experience'
 import Works from '../components/works'
 import Contact from '../components/Contact'
 import '../index.scss'
 import LoadingPage from '../components/loadingPage'
 import { Content } from '../components/indexComponents'
+import Separator from '../components/utilities/Separator'
+import Footer from '../components/Footer'
+import TimeLine from '../components/TimeLine'
 
 const Index = () => {
   return <>
@@ -15,10 +18,13 @@ const Index = () => {
       <Content>
         <NavBar />
         <Inicio />
-        <About />
-        <Experience />
+        <Separator title='Experience' description="Here are some companies I've worked"/>
+        {/* <About /> */}
+        <TimeLine/>
+        {/* <Experience /> */}
+        <Separator title='My Work' description="Timeline of the projects that I have developed"/>
         <Works />
-        <Contact />
+        <Footer />
       </Content>
     </LoadingPage>
   </>

@@ -104,9 +104,6 @@ export const HeaderCustom = styled.header`
 
 export const NavCustom = styled.header`
 
-    @media (max-width: 640px) { 
-        height: auto;
-    }
     `
 
 export const Kcontainer = styled.div`

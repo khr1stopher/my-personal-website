@@ -6,24 +6,7 @@ const Experience = () => {
     return <SectionPage 
         id="experienceSection"
         className="
-        md:grid md:grid-cols-1 h-auto" maxHeight="auto" hScreem="h-auto">
-        <div className="col-start-1 col-end-12 titulo w-full flex items-center font-bold mb-5">
-            <TitleCustom className="font-sans text-slate-300 block">
-                My Experience
-            </TitleCustom>
-            <LineTitle className="bg-slate-600 ml-5 w-[200px]"></LineTitle>
-        </div>
-        <div className="descripcion col-start-1 col-end-12 mb-5">
-            <p className="mx-5 text-slate-400 mb-3">
-                What you will see below are companies that I have provided services to, either hired as a freelancer or as an external developer (from another company).
-            </p>
-            <p className="mx-5 text-slate-400 mb-3 font-mono">
-                01.- those with <span className="bg-orange-800 text-orange-200 text-xs px-2 inline-block rounded-full uppercase font-semibold tracking-wide">freelancer</span> means that they contracted my services as freelance developer either to provide services to the same company or to provide services to a third
-            </p>
-            <p className="mx-5 text-slate-400 font-mono">
-                02.- those with <span className="bg-teal-800 text-teal-200 text-xs px-2 inline-block rounded-full uppercase font-semibold tracking-wide">by company</span> means that they are companies which I serve as an external developer
-            </p>
-        </div>
+        md:grid md:grid-cols-1 h-auto" maxHeight="auto" hScreem="h-auto" styles={{padding:"0px !important"}}>
         <ContainerCards className="content
         md:grid grid-cols-2">
             <Card description="financial services company" cargo="Desarrollador & Analistas de Software" tipe="by:apinterfaces" technologys={[

@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-    --c1: #020209;
-    --c2: #0a192f;
-    --c3: #00f7ff;
-    --c4: #062366;
-    --c5: #112240;
+    --c1: #06101e;
+    --c2: #081426;
+    --c3: #00c6cc;
+    --c4: #051c52;
+    --c5: #0e1b33;
 }
 
 .bg-c2{
@@ -34,9 +34,40 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--c2);
-    min-height: 100vh;
     counter-reset: section;
 }
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/gradient.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;    
+    opacity: 0.3; /* Opacidad de la imagen de fondo */
+    animation-name: parapadeo;
+    animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes parapadeo {
+    0% {
+        opacity: 0.3; /* Opacidad de la imagen de fondo */
+    }
+
+    
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 0.3; /* Opacidad de la imagen de fondo */
+    }
+  }
 
 @keyframes fadeIn {
     from {

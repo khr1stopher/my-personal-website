@@ -12,9 +12,10 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <title>Khristopher Pineda</title>
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}>
+      <body {...props.bodyAttributes} className="bg-top bg-no-repeat bg-lights-sun">
         {props.preBodyComponents}
         <div
           key={`body`}

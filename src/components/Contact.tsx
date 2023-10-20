@@ -20,7 +20,7 @@ const Contact = () => {
 
     return <SectionPage
         id="contactSection"
-        className="justify-center align-center mg:max-h-[600px] 2xl:max-h-[740px]" hScreem='h-screen'>
+        className="justify-center align-center mg:max-h-[600px] 2xl:max-h-[740px] mt-5" hScreem='h-screen'>
         <div className="titulo w-full flex items-center justify-center mb-3">
             <TitleCustom className="font-sans text-slate-300 block text-center font-bold">
                 Contact

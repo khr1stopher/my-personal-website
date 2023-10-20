@@ -13,7 +13,12 @@ const config: GatsbyConfig = {
       options: {
         path: `${__dirname}/src/images/`,
       },
-    },],
+    },    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: `${__dirname}/static/favicon.png`, // or 'src/images/favicon.ico'
+      },
+    }],
 }
 
 export default config
