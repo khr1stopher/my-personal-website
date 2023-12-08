@@ -19,7 +19,9 @@ interface Props {
 	</head>
 	<body>
 		<Header client:load/>
-		<slot />
+        <div class="mx-auto max-w-6xl flex flex-col justify-center box-border px-8">
+            <slot />
+        </div>
 	</body>
 </html>
 
