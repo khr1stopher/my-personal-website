@@ -1,5 +1,6 @@
 ---
 import Technologies from "../components/ui/Technologies.astro";
+import ShacdnBtn from "./ui/ShacdnBtn.astro";
 ---
 
 <div class="mt-0 pt-32" id="About">
@@ -12,12 +13,12 @@ import Technologies from "../components/ui/Technologies.astro";
         md:text-5xl md:mb-2
         lg:text-7xl"
         >
-            khristopher pineda <span class="font-serif">#</span>
+           <img src="../assets/" alt="">  khristopher pineda <span class="font-serif">#</span>
         </h1>
     </div>
     <div>
         <h2
-            class="text-slate-400 font-sans capitalize font-bold tracking-tighter text-4xl mb-3
+            class="text-slate-400 font-sans capitalize font-bold tracking-tighter text-4xl mb-3 
         md:text-5xl
         lg:text-6xl"
         >
@@ -26,7 +27,7 @@ import Technologies from "../components/ui/Technologies.astro";
     </div>
     <div>
         <p
-            class="text-slate-400 font-mono text-lg font-bold leading-0 w-11/12
+            class="text-slate-400 text-base leading-0 w-11/12
         md:w-9/12 md:text-xl
         lg:w-7/12"
         >
@@ -35,4 +36,5 @@ import Technologies from "../components/ui/Technologies.astro";
         </p>
     </div>
     <Technologies />
+    <ShacdnBtn text={"Download CV"}></ShacdnBtn>
 </div>
