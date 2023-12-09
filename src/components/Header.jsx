@@ -16,7 +16,7 @@ const Header = () => {
         }
     })
 
-    return <header style={{ transition: '.6s', zIndex: 50 }} className={`${shadowHeader ? 'shadow-black-500/40 shadow-xl' : ''} top-0 backdrop-blur-sm fixed w-full`}>
+    return <header style={{ transition: '.6s', zIndex: 50 }} className={`${shadowHeader ? 'shadow-black-500/40 shadow-xl' : ''} top-0 backdrop-blur-lg fixed w-full`}>
         <nav className="flex flex-col items-center">
             <div className="container flex justify-between items-center max-w-6xl mx-auto px-8">
                 <div className="flex w-full justify-start">
