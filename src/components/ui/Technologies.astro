@@ -14,7 +14,7 @@ import git from "../../assets/tech/git-icon.svg"
 import redis from "../../assets/tech/redis.svg"
 import postgresql from "../../assets/tech/postgresql.svg"
 ---
-<div class="flex flex-wrap mt-3 mb-5 gap-4 select-none">
+<div class="flex flex-wrap mt-3 mb-5 gap-3 select-none">
     <img class="h-auto rounded-lg w-[3rem]" src={javascript.src} alt="javascript" />
     <img class="h-auto rounded-lg w-[3rem]" src={node.src} alt="node" />
     <img class="h-auto rounded-lg w-[3rem]" src={typescript.src} alt="typescript" />
@@ -27,5 +27,13 @@ import postgresql from "../../assets/tech/postgresql.svg"
     <img class="h-auto rounded-lg w-[3rem]" src={postgresql.src} alt="postgresql" />
     <img class="h-auto rounded-lg w-[3rem]" src={redis.src} alt="redis" />
     <img class="h-auto rounded-lg w-[3rem]" src={tailwindcss.src} alt="tailwindcss" />
-    <img class="h-auto rounded-lg w-[3rem]" src={git.src} alt="git" />
+    <!-- <img class="h-auto rounded-lg w-[3rem]" src={git.src} alt="git" /> -->
 </div>
+
+<style>
+div img:hover{
+    transition: all .2s;
+    scale: 1.25;
+    z-index: 100;
+}
+</style>
