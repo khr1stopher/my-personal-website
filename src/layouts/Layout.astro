@@ -2,16 +2,17 @@
 import Header from '../components/Header.jsx';
 
 const { title } = Astro.props;
+const lang = "en"
 
 interface Props {
 	title: string;
 }
 ---
 <!doctype html>
-<html lang="en">
+<html lang={ lang }>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Khristopher Pineda Software Engenieer website" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="generator" content={ Astro.generator } />
@@ -19,7 +20,7 @@ interface Props {
 	</head>
 	<body>
 		<Header client:load/>
-        <div class="mx-auto max-w-6xl flex flex-col justify-center box-border px-8">
+        <div>
             <slot />
         </div>
 	</body>
@@ -35,7 +36,6 @@ interface Props {
 }
 
 body
-	min-height 200vh
 	margin 0
 	padding 0
 	background-color var(--c2)
