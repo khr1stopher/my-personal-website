@@ -40,10 +40,10 @@ const Header = () => {
                     <div className="links">
                         <ol className='flex px-2 gap-3'>
                             <button className='w-7 h-7' onClick={() => changeLanguage(language.EN)}>
-                                <img className={`rounded-sm ${ lang == language.EN ? "opacity-100" : "opacity-75" }`} src={en.src} alt="en" />
+                                <img className={`rounded ${ lang == language.EN ? "opacity-100" : "opacity-75" }`} src={en.src} alt="en" />
                             </button>
                             <button className='w-7 h-7' onClick={() => changeLanguage(language.FR)}>
-                                <img className={`rounded-sm ${ lang == language.FR ? "opacity-100" : "opacity-75" }`} src={fr.src} alt="fr" />
+                                <img className={`rounded ${ lang == language.FR ? "opacity-100" : "opacity-75" }`} src={fr.src} alt="fr" />
                             </button>
                         </ol>
                     </div>
