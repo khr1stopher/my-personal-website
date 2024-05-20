@@ -1,5 +1,7 @@
 ---
 import About from "../components/About.astro";
+import Experience from "../components/Experience";
+import Footer from "../components/Footer";
 import Work from "../components/Work";
 import Separator from "../components/ui/Separator.astro";
 import Layout from "../layouts/Layout.astro";
@@ -21,14 +23,18 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <Work />
     </div>
-    <div class="mx-auto max-w-6xl flex flex-col justify-center box-border px-8">
-        <About />
+    <div class="mx-auto max-w-6xl flex flex-col justify-center box-border px-8 text-white">
+        <div class="work-head text-center">
+            <h2 class="font-sans font-bold tracking-tighter text-4xl">
+                My Experience 📌
+            </h2>
+            <p class="text-slate-400 font-sans font-bold text-base mt-1" >
+                Professional Experience
+            </p>
+        </div>
+        <Experience/>
     </div>
-    <Separator
-        title={"Certifications"}
-        description={"Academic Training and Specialization Courses"}
-    />
-    <div class="mx-auto max-w-6xl flex flex-col justify-center box-border px-8">
-        <About />
+    <div class="mx-auto max-w-6xl flex flex-col justify-center box-border px-8 text-white">
+        <Footer/>
     </div>
 </Layout>
