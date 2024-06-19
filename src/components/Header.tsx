@@ -33,7 +33,7 @@ const Header = () => {
             <div className="container flex justify-between items-center max-w-6xl mx-auto px-8">
                 <div className="flex w-full justify-start">
                     <div className="flex items-center py-5 text-slate-300 font-sans capitalize font-bold tracking-tighter text-base">
-                        Khristopher Pineda 🌙
+                        Khristopher Pineda
                     </div>
                 </div>
                 <div className="flex md:flex items-center space-x-1">

@@ -1,58 +1,128 @@
-{
-    "work_experience": [
-        {
-            "company": "Afore Coppel",
-            "position": "Senior Software Developer",
-            "site": "https://aforecoppel.com/",
-            "description": {
-                "es": "As a Senior Developer in the Information Security and Critical Risks Department of AforeCoppel, my responsibilities are related to ensuring the security of sensitive data and systems, as well as managing critical risks within the organization.",
-                "en": "Como Desarrollador Senior en el Departamento de Seguridad de la Información y Riesgos Críticos de AforeCoppel, mis responsabilidades estan relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización."
+[
+    {
+        "company": "Afore Coppel, S.A. de C.V.",
+        "position": "Senior Software Developer",
+        "site": "https://aforecoppel.com/",
+        "description": "como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades estan relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
+        "technologies": [
+            "JBossFuse",
+            "Openshift",
+            "Kubernetes",
+            "MuleSoft",
+            "Javascript",
+            "Node.js",
+            "Angular",
+            "Express",
+            "Java",
+            "Spring",
+            "PM2"
+        ],
+        "projects": [
+            {
+                "title": "TLS",
+                "description": "como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades estan relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
+                "technologies": [
+                    "Openshift",
+                    "JBossFuse",
+                    "Java",
+                    "Spring"
+                ]
             },
-            "techs": [
-                "JBossFuse", "Openshift", "Kubernetes", "MuleSoft", "Javascript", "Node js", "Angular", "Express", "Java", "Spring", "PM2"
-            ],
-            "projects": [
-                { "title": "TLS", "description": "", "start_date": "", "end_date": "", "techs": ["Openshift", "JBossFuse", "Java", "Spring"] },
-                { "title": "Estado de Cuenta", "description": "", "start_date": "", "end_date": "", "techs": ["Node js", "Express", "Java", "PM2"] }
-            ],
-            "start_date": "2023-07-31",
-            "end_date": "Currently Working"
-        },
-        {
-            "company": "AP/Interfaces - Afore Coppel",
-            "position": "Software Developer and Analyst",
-            "site": "https://www.apinterfaces.mx/",
-            "description": {
-                "es": "As a Software Developer & Analyst, the rsposabilities involves Writing, testing, and maintaining code for software applications, Contributing to the design and architecture of software, Creating detailed system design specifications based on these requirements and Contributing to quality assurance efforts by defining test cases",
-                "en": "Como Desarrollador y Analista de Software, las responsabilidades incluyen Escribir, probar y mantener código para aplicaciones de software, Contribuir al diseño y arquitectura del software, Crear especificaciones detalladas de diseño del sistema basadas en estos requisitos y Contribuir a los esfuerzos de garantía de calidad definiendo casos de prueba."
+            {
+                "title": "Estado de Cuenta",
+                "description": "como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades estan relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
+                "technologies": [
+                    "Node.js",
+                    "Express",
+                    "Java",
+                    "PM2"
+                ]
+            }
+        ],
+        "start_date": "July 31, 2023",
+        "end_date": "Currently Working"
+    },
+    {
+        "company": "AP/Interfaces, S.A. de C.V.",
+        "position": "Software Developer and Analyst",
+        "site": "https://www.apinterfaces.mx/",
+        "description": "Como Desarrollador y Analista de Software, las responsabilidades incluyen Escribir, probar y mantener código para aplicaciones de software, Contribuir al diseño y arquitectura del software, Crear especificaciones detalladas de diseño del sistema basadas en estos requisitos y Contribuir a los esfuerzos de garantía de calidad definiendo casos de prueba.",
+        "technologies": [
+            "Javascript",
+            "TypeScript",
+            "Vue",
+            "Angular",
+            "Php",
+            "YII2",
+            "Codeigneiter",
+            "C++",
+            "C#",
+            "Python",
+            "Postgresql"
+        ],
+        "projects": [
+            {
+                "title": "TLS",
+                "description": "",
+                "technologies": [
+                    "Openshift",
+                    "JBossFuse",
+                    "Java",
+                    "Spring"
+                ]
             },
-            "techs": [
-                "Javascript", "TypeScript", "Vue", "Angular", "Php", "YII2", "Codeigneiter", "C++", "C#", "Python", "Postgresql"
-            ],
-            "projects": [
-                { "title": "TLS", "description": "", "start_date": "", "end_date": "", "techs": ["Openshift", "JBossFuse", "Java", "Spring"] },
-                { "title": "Estado de Cuenta", "description": "", "start_date": "", "end_date": "", "techs": ["Node js", "Express", "Java", "PM2"] }
-            ],
-            "start_date": "2021-05-31",
-            "end_date": "2023-08-02"
-        },
-        {
-            "company": "World Cloud Services",
-            "position": "Full Stack Software Developer",
-            "site": "",
-            "description": {
-                "es": "As a full-stack software developer in a consulting firm play a crucial role in the design, development and delivery of software solutions for clients.",
-                "en": "Como desarrollador de software full-stack en una empresa de consultoría, desempeña un papel crucial en el diseño, desarrollo y entrega de soluciones de software para clientes."
+            {
+                "title": "Estado de Cuenta",
+                "description": "",
+                "technologies": [
+                    "Node.js",
+                    "Express",
+                    "Java",
+                    "PM2"
+                ]
+            }
+        ],
+        "start_date": "May 31, 2021",
+        "end_date": "August 2, 2023"
+    },
+    {
+        "company": "World Cloud Services, S.A. de C.V.",
+        "position": "Full Stack Software Developer",
+        "description": "Como desarrollador de software full-stack en una empresa de consultoría, desempeña un papel crucial en el diseño, desarrollo y entrega de soluciones de software para clientes.",
+        "technologies": [
+            "Angular",
+            "Php",
+            "Javascript",
+            "TypeScript",
+            "C#",
+            ".NET",
+            ".NET CORE",
+            "Entityframework",
+            "SqlServer"
+        ],
+        "projects": [
+            {
+                "title": "TLS",
+                "description": "Worked closely with multiple companies to provide B2B solutions, collaborating with clients to understand their payment processing needs. Implemented a customized payment gateway solution for each client, resulting in a 65% reduction in processing times and increased customer satisfaction.",
+                "technologies": [
+                    "Openshift",
+                    "JBossFuse",
+                    "Java",
+                    "Spring"
+                ]
             },
-            "techs": [
-                "Angular", "Php", "Javascript", "TypeScript", "C#", ".NET", ".NET CORE", "Entityframework", "SqlServer"
-            ],
-            "projects": [
-                { "title": "TLS", "description": "", "start_date": "", "end_date": "", "techs": ["Openshift", "JBossFuse", "Java", "Spring"] },
-                { "title": "Estado de Cuenta", "description": "", "start_date": "", "end_date": "", "techs": ["Node js", "Express", "Java", "PM2"] }
-            ],
-            "start_date": "2020-05-01",
-            "end_date": "2021-04-30"
-        }
-    ]
-}
+            {
+                "title": "Estado de Cuenta",
+                "description": "",
+                "technologies": [
+                    "Node.js",
+                    "Express",
+                    "Java",
+                    "PM2"
+                ]
+            }
+        ],
+        "start_date": "May 1, 2020",
+        "end_date": "April 30, 2021"
+    }
+]
