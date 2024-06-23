@@ -3,126 +3,50 @@
         "company": "Afore Coppel, S.A. de C.V.",
         "position": "Senior Software Developer",
         "site": "https://aforecoppel.com/",
-        "description": "como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades estan relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
-        "technologies": [
-            "JBossFuse",
-            "Openshift",
-            "Kubernetes",
-            "MuleSoft",
-            "Javascript",
-            "Node.js",
-            "Angular",
-            "Express",
-            "Java",
-            "Spring",
-            "PM2"
-        ],
+        "description": "Como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades están relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
+        "technologies": ["JBossFuse","Openshift","Kubernetes","MuleSoft","Javascript","Node.js","Angular","Express","Java","Spring","PM2"],
         "projects": [
             {
                 "title": "TLS",
-                "description": "como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades estan relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
-                "technologies": [
-                    "Openshift",
-                    "JBossFuse",
-                    "Java",
-                    "Spring"
-                ]
+                "description": "Como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades están relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
+                "technologies": ["Openshift","JBossFuse","Java","Spring"]
             },
             {
                 "title": "Estado de Cuenta",
-                "description": "como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades estan relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
-                "technologies": [
-                    "Node.js",
-                    "Express",
-                    "Java",
-                    "PM2"
-                ]
+                "description": "Como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades están relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
+                "technologies": ["Node.js","Express","Java","PM2"]
             }
         ],
-        "start_date": "July 31, 2023",
-        "end_date": "Currently Working"
+        "startDate": "2023-07-31",
+        "endDate": "Present"
     },
     {
         "company": "AP/Interfaces, S.A. de C.V.",
         "position": "Software Developer and Analyst",
         "site": "https://www.apinterfaces.mx/",
-        "description": "Como Desarrollador y Analista de Software, las responsabilidades incluyen Escribir, probar y mantener código para aplicaciones de software, Contribuir al diseño y arquitectura del software, Crear especificaciones detalladas de diseño del sistema basadas en estos requisitos y Contribuir a los esfuerzos de garantía de calidad definiendo casos de prueba.",
-        "technologies": [
-            "Javascript",
-            "TypeScript",
-            "Vue",
-            "Angular",
-            "Php",
-            "YII2",
-            "Codeigneiter",
-            "C++",
-            "C#",
-            "Python",
-            "Postgresql"
-        ],
+        "description": "Como Desarrollador y Analista de Software, las responsabilidades incluyen escribir, probar y mantener código para aplicaciones de software, contribuir al diseño y arquitectura del software, crear especificaciones detalladas de diseño del sistema basadas en estos requisitos y contribuir a los esfuerzos de garantía de calidad definiendo casos de prueba.",
+        "technologies": ["Javascript","TypeScript","Vue","Angular","Php","YII2","Codeigneiter","C++","C#","Python","Postgresql"],
         "projects": [
-            {
-                "title": "TLS",
-                "description": "",
-                "technologies": [
-                    "Openshift",
-                    "JBossFuse",
-                    "Java",
-                    "Spring"
-                ]
-            },
-            {
-                "title": "Estado de Cuenta",
-                "description": "",
-                "technologies": [
-                    "Node.js",
-                    "Express",
-                    "Java",
-                    "PM2"
-                ]
-            }
+            {"title": "TLS","description": "", "technologies": ["Openshift","JBossFuse","Java","Spring"]},
+            {"title": "Estado de Cuenta","description": "","technologies": ["Node.js","Express","Java","PM2"]}
         ],
-        "start_date": "May 31, 2021",
-        "end_date": "August 2, 2023"
+        "startDate": "2021-05-31",
+        "endDate": "2023-08-02"
     },
     {
         "company": "World Cloud Services, S.A. de C.V.",
         "position": "Full Stack Software Developer",
         "description": "Como desarrollador de software full-stack en una empresa de consultoría, desempeña un papel crucial en el diseño, desarrollo y entrega de soluciones de software para clientes.",
-        "technologies": [
-            "Angular",
-            "Php",
-            "Javascript",
-            "TypeScript",
-            "C#",
-            ".NET",
-            ".NET CORE",
-            "Entityframework",
-            "SqlServer"
-        ],
+        "technologies": ["Angular","Php","Javascript","TypeScript","C#",".NET",".NET CORE","Entityframework","SqlServer"],
         "projects": [
             {
                 "title": "TLS",
                 "description": "Worked closely with multiple companies to provide B2B solutions, collaborating with clients to understand their payment processing needs. Implemented a customized payment gateway solution for each client, resulting in a 65% reduction in processing times and increased customer satisfaction.",
-                "technologies": [
-                    "Openshift",
-                    "JBossFuse",
-                    "Java",
-                    "Spring"
-                ]
+                "technologies": ["Openshift","JBossFuse","Java","Spring"]
             },
-            {
-                "title": "Estado de Cuenta",
-                "description": "",
-                "technologies": [
-                    "Node.js",
-                    "Express",
-                    "Java",
-                    "PM2"
-                ]
-            }
+            {"title": "Estado de Cuenta", "description": "", "technologies": ["Node.js", "Express", "Java", "PM2"]}
         ],
-        "start_date": "May 1, 2020",
-        "end_date": "April 30, 2021"
+        "startDate": "2020-05-01",
+        "endDate": "2021-04-30"
     }
 ]
