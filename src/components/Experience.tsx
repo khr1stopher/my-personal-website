@@ -1,7 +1,7 @@
 import experienceData from '../assets/info.json'
 
 const Experience = () => {
-  return <div className="experience-container flex flex-col items-center md:px-[10%] my-3">
+  return <div className="experience-container flex flex-col items-center md:px-[10%] my-3 font-['Satoshi']">
     {experienceData.map((exp, index) => {
       return <div className="card-exp my-2" key={index}>
         <div className="job-title flex justify-between py-2">
