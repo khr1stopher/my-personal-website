@@ -16,6 +16,7 @@ const Work = () => {
                         </div>
                         <div className="content-website-container py-3">
                             <h4 className='text-slate-400 font-sans font-bold text-lg md:text-base mb-1'>Job Search Platform</h4>
+                            {/* TODO Change the icons for words */}
                             <p className='font-sans text-base flex gap-1'>
                                 <img className="h-auto w-[1.5rem] md:w-[1rem]" src={node.src} alt="node" />
                                 <img className="h-auto w-[1.5rem] md:w-[1rem]" src={vue.src} alt="vue" />

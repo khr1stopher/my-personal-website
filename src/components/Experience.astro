@@ -1,0 +1,34 @@
+---
+import experienceData from '../assets/info.json';
+---
+
+<div class="experience-container flex flex-col items-center md:px-[10%] my-3 font-['Satoshi']">
+  {experienceData.map((exp) => (
+    <div class="card-exp my-2 border border-white/20 p-8 rounded-2xl">
+      <div class="job-title flex flex-col md:flex-row justify-between py-2">
+        <div>
+          <a href={exp.site} class="font-semibold hover:text-[#faac37]" target="_blank">{exp.company}</a>
+          <span> • </span>
+          <span class="font-bold text-gray-300">{exp.position}</span>
+        </div>
+        <div class="italic text-sm">
+          <span>{exp.startDate} - {exp.endDate}</span>
+        </div>
+      </div>
+      <p class="job-description mb-2 text-gray-200">{exp.description}</p>
+      <ul class="job-content ml-4 list-disc text-gray-300">
+        {exp.projects.map((project) => (
+          <li class="leading-2 mb-1" >
+            <b class="text-[#faac37]">{project.title}</b>&nbsp;<span>{project.description }</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</div>
+
+<style lang="stylus">
+.card-exp:hover
+  border-color #faac37 !important
+  transition .75s
+</style>

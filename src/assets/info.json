@@ -1,52 +1,117 @@
 [
     {
-        "company": "Afore Coppel, S.A. de C.V.",
+        "company": "🔑 Afore Coppel, S.A. de C.V.",
         "position": "Senior Software Developer",
         "site": "https://aforecoppel.com/",
         "description": "Como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades están relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
         "technologies": ["JBossFuse","Openshift","Kubernetes","MuleSoft","Javascript","Node.js","Angular","Express","Java","Spring","PM2"],
         "projects": [
             {
-                "title": "TLS",
-                "description": "Como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades están relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
-                "technologies": ["Openshift","JBossFuse","Java","Spring"]
+                "title": "Contract Generation System 'PROCESSOR-CI3550127'",
+                "description": "Developed a system for creating registration and transfer contracts for Afore (Retirement Funds Administrator), generating them as PDF documents for subsequent use. Built using Python, this system streamlines the process of producing standardized, ready-to-use PDF contracts for new registrations and transfers between Afores. The PDF output ensures easy storage, distribution, and printing of contracts, enhancing document management efficiency in the retirement fund industry.",
+                "technologies": [
+                    "Python"
+                ]
             },
             {
-                "title": "Estado de Cuenta",
-                "description": "Como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades están relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
-                "technologies": ["Node.js","Express","Java","PM2"]
+                "title": "System 'Validador de Posibles Duplicados'",
+                "description": "Developed a system to validate potential duplicate client records across different Afores (retirement fund administrators). The system is capable of checking if a client exists in other Afores, addressing a common issue in the retirement fund industry where duplicate accounts may occur. This tool helps maintain data integrity and ensures proper account management for clients across multiple Afores. The system was developed using Vue.js for the frontend and CodeIgniter for the backend.",
+                "technologies": [
+                    "Vue.js",
+                    "CodeIgniter"
+                ]
+            },
+            {
+                "title": "TLS Certificate Update for CONSAR-communicating Microservices",
+                "description": "Performed an update of TLS certificates for approximately 120 microservices that communicate with CONSAR (National Commission for the Retirement Savings System). These services were developed in Java using Spring Boot with Camel context and deployed in OpenShift environments. The project involved managing and updating the security certificates for a large number of interconnected services, ensuring continued secure communication with the regulatory body while maintaining the integrity of the microservices architecture.",
+                "technologies": [
+                  "Java",
+                  "Spring Boot",
+                  "Camel",
+                  "OpenShift",
+                  "TLS/SSL"
+                ]
+            },
+            {
+                "title": "OAuth Service Enhancement for AforeCoppel.com",
+                "description": "Implemented security vulnerability fixes and performance improvements for the OAuth service of aforecoppel.com. The project focused on enhancing the authentication and authorization processes, addressing potential security risks, and optimizing the service's performance. Using Angular for the frontend and Node.js with Express for the backend, the improvements aimed to provide a more secure and efficient user authentication experience for AforeCoppel's online platform.",
+                "technologies": [
+                    "Angular",
+                    "Node.js",
+                    "Express",
+                    "OAuth"
+                ]
             }
         ],
-        "startDate": "2023-07-31",
+        "startDate": "July 31, 2023",
         "endDate": "Present"
     },
     {
-        "company": "AP/Interfaces, S.A. de C.V.",
+        "company": "👨🏻‍💻 AP/Interfaces, S.A. de C.V.",
         "position": "Software Developer and Analyst",
         "site": "https://www.apinterfaces.mx/",
-        "description": "Como Desarrollador y Analista de Software, las responsabilidades incluyen escribir, probar y mantener código para aplicaciones de software, contribuir al diseño y arquitectura del software, crear especificaciones detalladas de diseño del sistema basadas en estos requisitos y contribuir a los esfuerzos de garantía de calidad definiendo casos de prueba.",
+        "description": "Como Desarrollador y Analista de Software, las responsabilidades incluyen escribir, probar y mantener código para aplicaciones de software, contribuir al diseño y arquitectura del software",
         "technologies": ["Javascript","TypeScript","Vue","Angular","Php","YII2","Codeigneiter","C++","C#","Python","Postgresql"],
         "projects": [
-            {"title": "TLS","description": "", "technologies": ["Openshift","JBossFuse","Java","Spring"]},
-            {"title": "Estado de Cuenta","description": "","technologies": ["Node.js","Express","Java","PM2"]}
+            {
+                "title": "RSA Encryption for Data Transfer in Multiple Components",
+                "description": "Implemented a secure data transfer system between components for Coppel Afore's internal systems. Developed a service using NodeJs, TypeScript, and Express to encode and decode data, ensuring secure transmission. The project focused on vulnerable components including authenticators, services, appointments, and records. Key responsibilities included code review for implementation, troubleshooting and application maintenance, development of tests in various environments, and vulnerability remediation.",
+                "technologies": [
+                    "NodeJs",
+                    "TypeScript",
+                    "Express",
+                    "RSA Encryption"
+                ]
+            },
+            {
+                "title": "Coordinador Validadores using Vue & CodeIgniter",
+                "description": "Developed a system for Operations Afore application using Vue.js and CodeIgniter with a PostgreSQL database to administer various validations within an Afore. The project involved implementing previous logic with improvements, documenting the project, communicating with multidisciplinary teams, troubleshooting and maintaining the application, and developing tests in various environments.",
+                "technologies": [
+                    "Vue.js",
+                    "CodeIgniter",
+                    "PostgreSQL"
+                ]
+            }
         ],
-        "startDate": "2021-05-31",
-        "endDate": "2023-08-02"
+        "startDate": "May 5, 2021",
+        "endDate": "August 2, 2023"
     },
     {
-        "company": "World Cloud Services, S.A. de C.V.",
+        "company": "💡 World Cloud Services, S.A. de C.V.",
         "position": "Full Stack Software Developer",
+        "site": "https://www.wcslat.com/",
         "description": "Como desarrollador de software full-stack en una empresa de consultoría, desempeña un papel crucial en el diseño, desarrollo y entrega de soluciones de software para clientes.",
         "technologies": ["Angular","Php","Javascript","TypeScript","C#",".NET",".NET CORE","Entityframework","SqlServer"],
         "projects": [
             {
-                "title": "TLS",
-                "description": "Worked closely with multiple companies to provide B2B solutions, collaborating with clients to understand their payment processing needs. Implemented a customized payment gateway solution for each client, resulting in a 65% reduction in processing times and increased customer satisfaction.",
-                "technologies": ["Openshift","JBossFuse","Java","Spring"]
+                "title": "Chevyplan",
+                "description": "An automotive credit processing system for Chevrolet cars, developed using .NET Core, Angular, and SQL Server. This project automated Chevrolet's automotive credit processing, enabling remote operations during the pandemic and reducing health risks. Key responsibilities included designing and implementing the user interface, creating endpoints, implementing business logic, troubleshooting, application maintenance, and providing customer support.",
+                "technologies": [
+                    ".NET Core",
+                    "Angular",
+                    "SQL Server"
+                ]
             },
-            {"title": "Estado de Cuenta", "description": "", "technologies": ["Node.js", "Express", "Java", "PM2"]}
+            {
+                "title": "Re-engineering Scotiabank Microservice from .NET to .NET Core",
+                "description": "Re-engineered an internal Scotiabank system, migrating it from MVC to .NET Core. This project was carried out for the direct client Dataifx.com, modernizing the microservice architecture.",
+                "technologies": [
+                    ".NET Core",
+                    "Blazor"
+                ]
+            },
+            {
+                "title": "Automated Testing Environment for 'My Invoices' System",
+                "description": "Developed an automated testing solution for the 'My Invoices' (Mis Facturas) website, covering 200 use cases. Created a web-based platform to execute these tests and visualize results. Implemented automated tests using C# and Selenium, developed a web interface for test execution and result visualization, and utilized VsTest and .NET Framework for the testing platform.",
+                "technologies": [
+                  "C#",
+                  "Selenium",
+                  "VsTest",
+                  ".NET Framework"
+                ]
+            }
         ],
-        "startDate": "2020-05-01",
-        "endDate": "2021-04-30"
+        "startDate": "May 1, 2020",
+        "endDate": "April 31, 2021"
     }
 ]
