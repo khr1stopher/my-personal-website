@@ -1,0 +1,115 @@
+---
+import Header from '../components/Header.jsx';
+
+const { title } = Astro.props;
+const lang = "en"
+
+interface Props {
+	title: string;
+}
+---
+<!doctype html>
+<html lang={ lang }>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Khristopher Pineda Software Engenieer website" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="generator" content={ Astro.generator } />
+		<title>{ title }</title>
+	</head>
+	<body>
+		<Header client:load/>
+        <div>
+            <slot />
+        </div>
+	</body>
+</html>
+
+<style lang="stylus" is:global>
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(/fonts/Satoshi-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {  
+    font-family: 'Satoshi';
+    src: url(/fonts/Satoshi-Medium.woff);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(/fonts/Satoshi-Black.woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+:root {
+	--c1: #06101e;
+	--c2: #081426;
+    --c3: #00c6cc;
+    --c4: #051c52;
+    --c5: #0e1b33;
+}
+
+body
+	margin 0
+	padding 0
+	background-color var(--c2)
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../assets/gradient.svg')
+    background-repeat: no-repeat
+    background-size: cover;
+    z-index: -1;
+    opacity: 0;
+    animation-name: parapadeo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--c2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--c3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--c4)
+}
+
+@keyframes parapadeo {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 0.3;
+	}
+}
+
+</style>

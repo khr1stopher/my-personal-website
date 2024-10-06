@@ -1,0 +1,47 @@
+---
+// import { Image } from 'astro:assets';
+import { angular, javascript, node, typescript, vue, react, python, aws, dotnet, tailwindcss, git, redis, postgresql } from "../service/tech-img"
+
+const listTech = [
+    { name: "javascript", src: javascript.src},
+    { name: "node", src: node.src},
+    { name: "typescript", src: typescript.src},
+    { name: "angular", src: angular.src},
+    { name: "vue", src: vue.src},
+    { name: "react", src: react.src},
+    { name: "python", src: python.src},
+    // { name: "dart", src: dart.src},
+    { name: "dotnet", src: dotnet.src},
+    { name: "postgresql", src: postgresql.src},
+    { name: "redis", src: redis.src},
+    // { name: "git", src: git.src},
+    { name: "tailwindcss", src: tailwindcss.src},
+    { name: "aws", src: aws.src},
+]
+
+import { motion } from "framer-motion"
+
+const imgAnimation = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 20 },
+}
+
+const DURATION = 0.10
+---
+<div class="flex flex-wrap mt-3 mb-5 gap-3 select-none">
+    {
+        listTech.map((tech, index) => (
+            <motion.div initial="hidden" animate="visible" variants={imgAnimation} transition={{ duration: DURATION, delay: index * 0.1 }} client:visible>
+                <img class="h-auto rounded-lg w-[3rem]" src={tech.src} alt={tech.name} />
+            </motion.div>
+        ))
+    }
+</div>
+
+<style>
+div img:hover{
+    transition: all .2s;
+    scale: 1.25;
+    z-index: 100;
+}
+</style>

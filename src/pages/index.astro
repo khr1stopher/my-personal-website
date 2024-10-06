@@ -1,0 +1,23 @@
+---
+import About from "../components/About.astro";
+import Experience from "../components/Experience.astro";
+import Footer from "../components/Footer";
+import Work from "../components/Work";
+import Layout from "../layouts/Layout.astro";
+import { RevealSection } from '../layouts/RevealSection'
+---
+
+<Layout title="Khristopher Pineda | Software Engineer">
+    <div class="mx-auto max-w-6xl flex flex-col justify-center box-border px-8 text-white pt-32" >
+        <RevealSection client:visible>
+            <About />
+        </RevealSection>
+        <RevealSection client:visible>
+            <Work />
+        </RevealSection>
+        <RevealSection client:visible>
+            <Experience />
+        </RevealSection>
+        <Footer />
+    </div>
+</Layout>

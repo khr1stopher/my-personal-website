@@ -1,0 +1,25 @@
+---
+interface Props {
+    title: String,
+    description: String
+}
+
+const { title, description } = Astro.props
+---
+<div class="Separator px-10 relative flex flex-wrap select-none bg-[#00000040]
+    mg:items-center
+    md:justify-center
+    my-3">
+    <!-- <div class="absolute md:-top-5 h-32">
+        <h2 class="text-4xl sm:text-6xl md:text-7xl text-center font-bold dark:text-cyan-500/20 text-cyan-700/20">{title}</h2>
+    </div> -->
+    <div class="w-full lg:w-1/2  p-5 relative md:pl-9 pl-0 ">
+        <h2 class="text-3xl text-slate-300 font md:text-5xl font-bold md:text-center">{title}</h2>
+        <p class="text-base dark:text-slate-500 text-slate-500
+        md:text-center md:text-lg">{description}</p>
+    </div>
+</div>
+
+<style lang="stylus">
+
+</style>
