@@ -1,22 +1,41 @@
 ---
 // import { Image } from 'astro:assets';
 import { angular, javascript, node, typescript, vue, react, python, aws, dotnet, tailwindcss, git, redis, postgresql } from "../service/tech-img"
+
+const listTech = [
+    { name: "javascript", src: javascript.src},
+    { name: "node", src: node.src},
+    { name: "typescript", src: typescript.src},
+    { name: "angular", src: angular.src},
+    { name: "vue", src: vue.src},
+    { name: "react", src: react.src},
+    { name: "python", src: python.src},
+    // { name: "dart", src: dart.src},
+    { name: "dotnet", src: dotnet.src},
+    { name: "postgresql", src: postgresql.src},
+    { name: "redis", src: redis.src},
+    // { name: "git", src: git.src},
+    { name: "tailwindcss", src: tailwindcss.src},
+    { name: "aws", src: aws.src},
+]
+
+import { motion } from "framer-motion"
+
+const imgAnimation = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 20 },
+}
+
+const DURATION = 0.10
 ---
 <div class="flex flex-wrap mt-3 mb-5 gap-3 select-none">
-    <img class="h-auto rounded-lg w-[3rem]" src={javascript.src} alt="javascript" />
-    <img class="h-auto rounded-lg w-[3rem]" src={node.src} alt="node" />
-    <img class="h-auto rounded-lg w-[3rem]" src={typescript.src} alt="typescript" />
-    <img class="h-auto rounded-lg w-[3rem]" src={angular.src} alt="angular" />
-    <img class="h-auto rounded-lg w-[3rem]" src={vue.src} alt="vue" />
-    <img class="h-auto rounded-lg w-[3rem]" src={react.src} alt="react" />
-    <img class="h-auto rounded-lg w-[3rem]" src={python.src} alt="python" />
-    <!-- <img class="h-auto rounded-lg w-[3rem]" src={dart.src} alt="dart" /> -->
-    <img class="h-auto rounded-lg w-[3rem]" src={dotnet.src} alt="dotnet" />
-    <img class="h-auto rounded-lg w-[3rem]" src={postgresql.src} alt="postgresql" />
-    <img class="h-auto rounded-lg w-[3rem]" src={redis.src} alt="redis" />
-    <!-- <img class="h-auto rounded-lg w-[3rem]" src={git.src} alt="git" /> -->
-    <img class="h-auto rounded-lg w-[3rem]" src={tailwindcss.src} alt="tailwindcss" />
-    <img class="h-auto rounded-lg w-[3rem]" src={aws.src} alt="aws" />
+    {
+        listTech.map((tech, index) => (
+            <motion.div initial="hidden" animate="visible" variants={imgAnimation} transition={{ duration: DURATION, delay: index * 0.1 }} client:visible>
+                <img class="h-auto rounded-lg w-[3rem]" src={tech.src} alt={tech.name} />
+            </motion.div>
+        ))
+    }
 </div>
 
 <style>

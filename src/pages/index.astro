@@ -4,37 +4,20 @@ import Experience from "../components/Experience.astro";
 import Footer from "../components/Footer";
 import Work from "../components/Work";
 import Layout from "../layouts/Layout.astro";
+import { RevealSection } from '../layouts/RevealSection'
 ---
 
 <Layout title="Khristopher Pineda | Software Engineer">
-    <div class="mx-auto max-w-6xl flex flex-col justify-center box-border px-8 text-white" >
-        <section class="about pt-32 pb-16">
+    <div class="mx-auto max-w-6xl flex flex-col justify-center box-border px-8 text-white pt-32" >
+        <RevealSection client:visible>
             <About />
-        </section>
-        <section class="work pb-16">
-            <div class="work-head text-center">
-                <h2 class="font-sans font-bold tracking-tighter text-4xl">
-                    My Work 💼
-                </h2>
-                <p class="text-slate-400 font-sans font-bold text-base mt-1">
-                    Current projects I'm working on
-                </p>
-            </div>
+        </RevealSection>
+        <RevealSection client:visible>
             <Work />
-        </section>
-        <section class="experience pb-16">
-            <div class="experience-head text-center">
-                <h2 class="font-sans font-bold tracking-tighter text-4xl">
-                    My Experience 📌
-                </h2>
-                <p class="text-slate-400 font-sans font-bold text-base mt-1">
-                    Professional Experience
-                </p>
-            </div>
-            <div class="content max-w-40">
-                <Experience />
-            </div>
-        </section>
+        </RevealSection>
+        <RevealSection client:visible>
+            <Experience />
+        </RevealSection>
         <Footer />
     </div>
 </Layout>
