@@ -19,7 +19,7 @@ const Work = () => {
                 <div className="grid-wrapper">
                     <div className="ol flex flex-wrap gap-6 justify-around">
                         {/* First Item */}
-                        <li className="list-none text-white rounded-xl w-full lg:w-1/3 md:w-5/6 mx-auto lg:mx-0 py-5 flex-[0_0_100%] md:flex-[0_0_30%]">
+                        <li className="list-none  text-white rounded-xl w-full lg:w-1/3 md:w-5/6 mx-auto lg:mx-0 py-5 flex-[0_0_100%] md:flex-[0_0_30%]">
                             <div className="img-website-container">
                                 <img className="rounded" src={screenshot1.src} alt="Job Search Platform" />
                             </div>

@@ -34,7 +34,7 @@ const Header = () => {
         }
     })
 
-    return <motion.header transition={{ delay: 0.6 }}className={`${shadowHeader ? 'shadow-black-500/40 shadow-xl' : ''} top-0 backdrop-blur-lg fixed w-full`}>
+    return <motion.header transition={{ delay: 0.6 }} className={`${shadowHeader ? 'shadow-black-500/40 shadow-xl' : ''} top-0 fixed w-full z-10 backdrop-blur-sm`}>
         <nav className="flex flex-col items-center">
             <div className="container flex justify-between items-center max-w-6xl mx-auto px-8">
                 <div className="flex w-full justify-start">

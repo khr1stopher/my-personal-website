@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+    font-variation-settings: normal;
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    display: inline-flex;
+    height: 2.25rem;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: calc(0.5rem - 2px);
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    box-shadow: 0 0 #0000,0 0 #0000, 0 0 #0000;
+}
