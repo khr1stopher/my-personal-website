@@ -76,9 +76,9 @@ function ExperienceContainer({ experienceData }: ExperienceContainerProps) {
         </motion.div>
       ))
     }
-    <a onClick={() => showMoreSet(!showMore)} className="px-5 py-2 text-center cursor-pointer w-auto bg-neutral-800 text-slate-200 m-auto" style={{borderRadius: 'calc(0.5rem - 2px)'}}>
+    <a onClick={() => showMoreSet(!showMore)} className="border-dashed border-2 border-sky-500 font-bold px-5 py-2 text-center cursor-pointer w-auto bg-transparent text-neutral-200 m-auto" style={{borderRadius: 'calc(0.5rem - 2px)'}}>
       <span>
-        look more in my cv 😊
+        {showMore ? "Show Less" : "Show More"}
       </span>
     </a>
   </div>
