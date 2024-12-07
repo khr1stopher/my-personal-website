@@ -3,7 +3,7 @@
         "company": "🔑 Afore Coppel, S.A. de C.V.",
         "position": "Senior Software Developer",
         "site": "https://aforecoppel.com/",
-        "description": "Como desarrollador senior en el departamento de seguridad de la información y riesgos críticos de AforeCoppel, mis responsabilidades están relacionadas con garantizar la seguridad de los datos y sistemas sensibles, así como gestionar los riesgos críticos dentro de la organización.",
+        "description": "As a senior developer in AforeCoppel's information security and critical risk department, my responsibilities are related to ensuring the security of sensitive data and systems, as well as managing critical risks within the organization.",
         "technologies": ["JBossFuse","Openshift","Kubernetes","MuleSoft","Javascript","Node.js","Angular","Express","Java","Spring","PM2"],
         "projects": [
             {
@@ -50,7 +50,7 @@
         "company": "👨🏻‍💻 AP/Interfaces, S.A. de C.V.",
         "position": "Software Developer and Analyst",
         "site": "https://www.apinterfaces.mx/",
-        "description": "Como Desarrollador y Analista de Software, las responsabilidades incluyen escribir, probar y mantener código para aplicaciones de software, contribuir al diseño y arquitectura del software",
+        "description": "As a Software Developer and Analyst, responsibilities include writing, testing, and maintaining code for software applications, contributing to software design and architecture",
         "technologies": ["Javascript","TypeScript","Vue","Angular","Php","YII2","Codeigneiter","C++","C#","Python","Postgresql"],
         "projects": [
             {
@@ -80,7 +80,7 @@
         "company": "💡 World Cloud Services, S.A. de C.V.",
         "position": "Full Stack Software Developer",
         "site": "https://www.wcslat.com/",
-        "description": "Como desarrollador de software full-stack en una empresa de consultoría, desempeña un papel crucial en el diseño, desarrollo y entrega de soluciones de software para clientes.",
+        "description": "As a full-stack software developer in a consulting firm, he plays a crucial role in the design, development and delivery of software solutions for clients.",
         "technologies": ["Angular","Php","Javascript","TypeScript","C#",".NET",".NET CORE","Entityframework","SqlServer"],
         "projects": [
             {

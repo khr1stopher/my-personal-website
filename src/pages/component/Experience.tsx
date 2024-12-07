@@ -1,5 +1,5 @@
 import { useState } from "react";
-import experienceData from "../assets/info.json";
+import experienceData from "../../assets/info.json";
 import { motion } from "framer-motion";
 
 interface ExperienceContainerProps {
@@ -78,7 +78,7 @@ function ExperienceContainer({ experienceData }: ExperienceContainerProps) {
     }
     <a onClick={() => showMoreSet(!showMore)} className="px-5 py-2 text-center cursor-pointer w-auto bg-neutral-800 text-slate-200 m-auto" style={{borderRadius: 'calc(0.5rem - 2px)'}}>
       <span>
-        {showMore ? 'Show Less' : 'Show More'}
+        look more in my cv 😊
       </span>
     </a>
   </div>

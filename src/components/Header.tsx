@@ -19,11 +19,19 @@ const Header = () => {
     }
 
     const changeLanguage = (newLanguage: language) => {
-        setlang(newLanguage);
+        let actual_lang = window.location.pathname == '/' ? language.EN : language.FR;
+
+        if (actual_lang != newLanguage) {
+            window.location.href = newLanguage == language.EN ? `/` : `/fr/`
+        }
     };
 
     useEffect(() => {
+
+        
         if (window !== undefined) {
+            setlang(window.location.pathname == '/' ? language.EN : language.FR)
+            
             window?.addEventListener('scroll', () => {
                 if (window?.scrollY > 100) {
                     setshadowHeader(true)

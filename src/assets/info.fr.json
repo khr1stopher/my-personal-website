@@ -1,0 +1,117 @@
+[
+    {
+        "company": "🔑 Afore Coppel, S.A. de C.V.",
+        "position": "Développeur de logiciels senior",
+        "site": "https://aforecoppel.com/",
+        "description": "En tant que développeur senior au sein du département de la sécurité de l'information et des risques critiques d'AforeCoppel, mes responsabilités sont liées à la sécurisation des données et des systèmes sensibles, ainsi qu'à la gestion des risques critiques au sein de l'organisation.",
+        "technologies": ["JBossFuse","Openshift","Kubernetes","MuleSoft","Javascript","Node.js","Angular","Express","Java","Spring","PM2"],
+        "projects": [
+            {
+                "title": "Système de génération de contrats 'PROCESSOR-CI3550127'",
+                "description": "Développement d'un système de création de contrats d'enregistrement et de transfert pour Afore (Retirement Funds Administrator), les générant sous forme de documents PDF pour une utilisation ultérieure. Construit en utilisant Python, ce système rationalise le processus de production de contrats PDF standardisés et prêts à l'emploi pour les nouveaux enregistrements et les transferts entre Afore. La sortie PDF facilite le stockage, la distribution et l'impression des contrats, améliorant ainsi l'efficacité de la gestion des documents dans le secteur des fonds de retraite.",
+                "technologies": [
+                    "Python"
+                ]
+            },
+            {
+                "title": "Système 'Possible Duplicates Validator'.",
+                "description": "Mise au point d'un système permettant de valider d'éventuels dossiers de clients en double dans différentes Afores (administrateurs de fonds de retraite). Le système est capable de vérifier si un client existe dans d'autres Afores, ce qui répond à un problème courant dans le secteur des fonds de retraite, où des comptes peuvent être dupliqués. Cet outil permet de maintenir l'intégrité des données et d'assurer une bonne gestion des comptes des clients dans plusieurs Afores. Le système a été développé en utilisant Vue.js pour le frontend et CodeIgniter pour le backend.",
+                "technologies": [
+                    "Vue.js",
+                    "CodeIgniter"
+                ]
+            },
+            {
+                "title": "Mise à jour du certificat TLS pour les microservices communiquant avec CONSAR",
+                "description": "Réalisation d'une mise à jour des certificats TLS pour environ 120 microservices qui communiquent avec CONSAR (Commission nationale pour le système d'épargne retraite). Ces services ont été développés en Java à l'aide de Spring Boot avec le contexte Camel et déployés dans des environnements OpenShift. Le projet impliquait la gestion et la mise à jour des certificats de sécurité pour un grand nombre de services interconnectés, garantissant une communication sécurisée continue avec l'organisme de réglementation tout en maintenant l'intégrité de l'architecture des microservices.",
+                "technologies": [
+                  "Java",
+                  "Spring Boot",
+                  "Camel",
+                  "OpenShift",
+                  "TLS/SSL"
+                ]
+            },
+            {
+                "title": "Amélioration du service OAuth pour AforeCoppel.com",
+                "description": "Mise en œuvre de corrections de vulnérabilités de sécurité et d'améliorations de performance pour le service OAuth de aforecoppel.com. Le projet s'est concentré sur l'amélioration des processus d'authentification et d'autorisation, la résolution des risques de sécurité potentiels et l'optimisation des performances du service. En utilisant Angular pour le frontend et Node.js avec Express pour le backend, les améliorations visaient à fournir une expérience d'authentification des utilisateurs plus sûre et plus efficace pour la plateforme en ligne d'AforeCoppel.    ",
+                "technologies": [
+                    "Angular",
+                    "Node.js",
+                    "Express",
+                    "OAuth"
+                ]
+            }
+        ],
+        "startDate": "Juillet 31, 2023",
+        "endDate": "Présent"
+    },
+    {
+        "company": "👨🏻‍💻 AP/Interfaces, S.A. de C.V.",
+        "position": "Développeur et analyste de logiciels",
+        "site": "https://www.apinterfaces.mx/",
+        "description": "En tant que développeur et analyste de logiciels, les responsabilités comprennent l'écriture, le test et la maintenance du code pour les applications logicielles, la contribution à la conception et à l'architecture des logiciels.",
+        "technologies": ["Javascript","TypeScript","Vue","Angular","Php","YII2","Codeigneiter","C++","C#","Python","Postgresql"],
+        "projects": [
+            {
+                "title": "Chiffrement RSA pour le transfert de données dans des composants multiples",
+                "description": "Mise en place d'un système de transfert de données sécurisé entre les composants des systèmes internes de Coppel Afore. Développement d'un service utilisant NodeJs, TypeScript et Express pour encoder et décoder les données, assurant ainsi une transmission sécurisée. Le projet s'est concentré sur les composants vulnérables, notamment les authentificateurs, les services, les rendez-vous et les enregistrements. Les principales responsabilités comprenaient l'examen du code pour la mise en œuvre, le dépannage et la maintenance de l'application, le développement de tests dans divers environnements et la correction des vulnérabilités.",
+                "technologies": [
+                    "NodeJs",
+                    "TypeScript",
+                    "Express",
+                    "RSA Encryption"
+                ]
+            },
+            {
+                "title": "Coordinador Validadores utilisant Vue & CodeIgniter",
+                "description": "Développement d'un système pour l'application Afore Operations utilisant Vue.js et CodeIgniter avec une base de données PostgreSQL pour administrer diverses validations au sein d'Afore. Le projet comprenait la mise en œuvre de la logique précédente avec des améliorations, la documentation du projet, la communication avec des équipes multidisciplinaires, le dépannage et la maintenance de l'application, et le développement de tests dans divers environnements.",
+                "technologies": [
+                    "Vue.js",
+                    "CodeIgniter",
+                    "PostgreSQL"
+                ]
+            }
+        ],
+        "startDate": "Mai 5, 2021",
+        "endDate": "Août 2, 2023"
+    },
+    {
+        "company": "💡 World Cloud Services, S.A. de C.V.",
+        "position": "Développeur de logiciels Full Stack",
+        "site": "https://www.wcslat.com/",
+        "description": "En tant que développeur de logiciels complets dans une société de conseil, il joue un rôle crucial dans la conception, le développement et la fourniture de solutions logicielles pour les clients.",
+        "technologies": ["Angular","Php","Javascript","TypeScript","C#",".NET",".NET CORE","Entityframework","SqlServer"],
+        "projects": [
+            {
+                "title": "Chevyplan",
+                "description": "Un système de traitement des crédits automobiles pour les voitures Chevrolet, développé à l'aide de .NET Core, Angular et SQL Server. Ce projet a automatisé le traitement du crédit automobile de Chevrolet, permettant des opérations à distance pendant la pandémie et réduisant les risques pour la santé. Les principales responsabilités comprenaient la conception et la mise en œuvre de l'interface utilisateur, la création de points d'extrémité, la mise en œuvre de la logique commerciale, le dépannage, la maintenance de l'application et la fourniture d'une assistance à la clientèle.",
+                "technologies": [
+                    ".NET Core",
+                    "Angular",
+                    "SQL Server"
+                ]
+            },
+            {
+                "title": "Re-engineering Scotiabank Microservice from .NET to .NET Core",
+                "description": "Réingénierie d'un système interne de la Banque Scotia, en le faisant migrer de MVC à .NET Core. Ce projet a été réalisé pour le client direct Dataifx.com, en modernisant l'architecture des microservices.",
+                "technologies": [
+                    ".NET Core",
+                    "Blazor"
+                ]
+            },
+            {
+                "title": "Environnement de test automatisé pour le système 'My Invoices' (Mes factures)",
+                "description": "Développement d'une solution de test automatisée pour le site web « Mes factures » (Mis Facturas), couvrant 200 cas d'utilisation. Création d'une plateforme web pour l'exécution de ces tests et la visualisation des résultats. Mise en œuvre de tests automatisés à l'aide de C# et de Selenium, développement d'une interface web pour l'exécution des tests et la visualisation des résultats, et utilisation de VsTest et de .NET Framework pour la plate-forme de test.",
+                "technologies": [
+                  "C#",
+                  "Selenium",
+                  "VsTest",
+                  ".NET Framework"
+                ]
+            }
+        ],
+        "startDate": "Mai 1, 2020",
+        "endDate": "Avril 31, 2021"
+    }
+]
