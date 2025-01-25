@@ -6,9 +6,9 @@ import { angular, astro, dotnet, node, postgresql, python, react, redis, tailwin
 import WorkCardComponent from '../../components/WorkCardComponent';
 
 const WorkList = [
-    { id: 1, img: screenshot1, description: 'Job Search Platform', technologies: [node, vue, dotnet, postgresql, redis, tailwindcss] },
-    { id: 2, img: screenshot2, description: 'Pricing page', technologies: [node, astro, react, tailwindcss] },
-    { id: 3, img: screenshot3, description: 'Dashboard UI', technologies: [node, angular, tailwindcss, redis, postgresql, python] },
+    { id: 1, img: screenshot1, description: 'Job Search Platform', link: "https://github.com/khr1stopher/Job-Search-Platform",technologies: [node, vue, dotnet, postgresql, redis, tailwindcss] },
+    { id: 2, img: screenshot2, description: 'Pricing page', link: "https://github.com/khr1stopher/Pricing-page", technologies: [node, astro, react, tailwindcss] },
+    { id: 3, img: screenshot3, description: 'Dashboard UI', link: "https://github.com/khr1stopher/Dashboard-UI", technologies: [node, angular, tailwindcss, redis, postgresql, python] },
 ]
 
 const Work = () => {
@@ -27,7 +27,7 @@ const Work = () => {
                     <div className="ol flex flex-wrap gap-6 justify-around">
                         {
                             WorkList.map((work) => {
-                                return <WorkCardComponent key={work.id} img={work.img} description={work.description} technologies={work.technologies} />;
+                                return <WorkCardComponent key={work.id} img={work.img} description={work.description} technologies={work.technologies} link={work.link} />;
                             })
                         }
                     </div>
