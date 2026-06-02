@@ -46,7 +46,7 @@ function ExperienceContainer({ experienceData }: ExperienceContainerProps) {
     closed: { display: 'none', opacity: 0, y: 100 },
   }
 
-  return <div className="experience-container max-w-40 flex flex-col items-center md:px-[10%] my-3 font-['Satoshi']" >
+  return <div className="experience-container flex flex-col items-center md:px-[10%] my-3 font-['Satoshi']" >
     {
       experienceData.map((exp, index) => (
         <motion.div className="card-exp my-2 p-8 rounded-2xl" key={index} animate={index < 1 ? "open" : showMore ? "open" : "closed"} variants={variants} transition={{ duration: 0.1, delay: index * 0.1 }}>
