@@ -14,6 +14,8 @@ const item = {
     hidden: { opacity: 0, y: 25 },
 }
 
+const EMAIL = "khristopher.pineda.dev@gmail.com"
+
 const DURATION = 0.10
 ---
 
@@ -65,7 +67,7 @@ const DURATION = 0.10
             <LinkFileBtn text={"Download CV"} />
         </motion.div>
         <motion.div className="flex-[0_0_100%] md:flex-initial" initial="hidden" animate="visible" variants={item} transition={{ duration: DURATION + 0.1, delay: 1.6 }} client:visible>
-            <a href="mailto:khristopher.pineda.dev@gmail.com" class="w-full text-slate-200 select-none">
+            <a class="w-full text-slate-200 select-none">
                 <svg width="1.25em" height="1.05em" viewBox="0 0 256 193" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                     <g>
                         <path d="M58.1818182,192.049515 L58.1818182,93.1404244 L27.5066233,65.0770089 L0,49.5040608 L0,174.59497 C0,184.253152 7.82545455,192.049515 17.4545455,192.049515 L58.1818182,192.049515 Z" fill="#4285F4"></path>
